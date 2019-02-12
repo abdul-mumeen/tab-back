@@ -21,6 +21,6 @@ app.use(bodyParser.json());
 // basicController(app);
 routes.routesV1(app, router);
 
-app.listen(7000, () => {
+app.listen(process.env.PORT, () => {
     console.log('listening on port 8080');
 });
