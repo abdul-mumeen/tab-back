@@ -2,12 +2,35 @@ const fs = require('fs');
 const path = require('path');
 const async = require('async');
 const firebase = require('firebase');
-
 require('dotenv').config();
 
+const mysqlOpts = {
+    user : 'joshua',
+    password : 'password',
+    database : 'tabby',
+    host: 'localhost',
+    port: '3308',
+};
 
-const createRoute = (routes) => {
-    const controllerPath = path.join(path.dirname(module.parent.filename), '../controllers');
+const db = require('mysql').createConnection(mysqlOpts);
+
+db.connect(err => {
+    if (err) console.error(err);
+});
+
+// const knex = require('knex')({
+//     client: 'mysql',
+//     version: '8',
+//     connection: {
+//         host : '127.0.0.1',
+//         user : 'root',
+//         password : '0987654321',
+//         database : 'tabby'
+//     }
+// });
+
+const createRoute = (routes, serviceName) => {
+    const controllerPath = path.join(__dirname, `../services/${serviceName}/controllers`);
     const files = fs.readdirSync(controllerPath);
 
     const controller = files.reduce((acc, file) => {
@@ -112,7 +135,7 @@ const createController = (waterfall) => {
             }
         });
 
-        unfoldWaterfall[0] = async.apply(unfoldWaterfall[0], req, res, firebase);
+        unfoldWaterfall[0] = async.apply(unfoldWaterfall[0], req, res, {firebase, db });
 
         // Do Async Op
         async.waterfall(
@@ -122,9 +145,41 @@ const createController = (waterfall) => {
     }
 }
 
+function listTables() {
+    let query =  '';
+    let bindings = [];
+
+    switch(knex.client.constructor.name) {
+        case 'Client_MSSQL':
+            query = 'SELECT table_name FROM information_schema.tables WHERE table_schema = \'public\' AND table_catalog = ?',
+            bindings = [ knex.client.database() ];
+            break;
+        case 'Client_MySQL':
+        case 'Client_MySQL2':
+            query = 'SELECT table_name FROM information_schema.tables WHERE table_schema = ?';
+            bindings = [ knex.client.database() ];
+            break;
+        case 'Client_Oracle':
+        case 'Client_Oracledb':
+            query = 'SELECT table_name FROM user_tables';
+            break;
+        case 'Client_PG':
+            query =  'SELECT table_name FROM information_schema.tables WHERE table_schema = current_schema() AND table_catalog = ?';
+            bindings = [ knex.client.database() ];
+            break;
+        case 'Client_SQLite3':
+            query = "SELECT name AS table_name FROM sqlite_master WHERE type='table'";
+            break;
+    }
+
+    return knex.raw(query, bindings).then(function(results) {
+        return results.rows.map((row) => row.table_name);
+    });
+}
 
 module.exports = {
     createRoute,
     response,
-    createController
+    createController,
+    listTables
 };

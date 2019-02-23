@@ -7,4 +7,5 @@ module.exports = createRoute(
     ['post', '/signup', 'signUp'],
     ['post', '/authenticate', 'authenticate']
   ],
+  'auth'
 );
