@@ -1,19 +1,19 @@
-const mysql = require('mysql');
+// const mysql = require('mysql');
 
 
-const mysqlOpts = {
-    user: 'joshua',
-    password: 'password',
-    database: 'tabby',
-    host: 'localhost',
-    port: '3306',
-};
+// const mysqlOpts = {
+//         user : 'joshua',
+//         password : 'password',
+//         database : 'tabby',
+//         host: 'localhost',
+//         port: '3306',
+// };
 
-const db = mysql.createConnection(mysqlOpts);
+// const db = mysql.createConnection(mysqlOpts);
 
-db.connect(err => {
-    if (err) console.error(err);
-});
+// db.connect(err => {
+//     if (err) console.error(err);
+// });
 
 
 module.exports = function (app) {
