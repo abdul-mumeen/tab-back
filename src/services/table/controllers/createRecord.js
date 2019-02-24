@@ -42,10 +42,16 @@ function checkBody (req, res, {db}, callback) {
                 code: 400,
                 message: err.message
             }, res);
-          }
-          data.rows = body.rows;
-          data.tableName = req.params.name;
-          return callback(null, res, db, data);
+        }
+
+        if (!Array.isArray(body.rows)) {
+            return callback({ code: 400, message: 'Invalid row input' }, res);
+        } else if (!Array.isArray(body.rows[0])) {
+            return callback({ code: 400, message: 'Invalid row input' }, res);
+        };
+        data.rows = body.rows;
+        data.tableName = req.params.name;
+        return callback(null, res, db, data);
     });
 }
 
