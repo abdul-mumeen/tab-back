@@ -11,8 +11,11 @@ Method: POST
 ```js
 {
     rows: [
-        { columnName: String!, value: any }
-        {...}
+        [
+            { columnName: String!, value: any }
+            {...}
+        ]
+        ...
     ]!
 }
 ```
