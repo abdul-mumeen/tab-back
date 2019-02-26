@@ -101,47 +101,63 @@ const response = {
 }
 
 const createController = (waterfall) => {
-    const {
-        API_KEY,
-        AUTH_DOMAIN,
-        DATABASE_URL,
-        PROJECT_ID,
-        STORAGE_BUCKET,
-        MESSANGING_SENDER_ID
-    } = process.env;
+    const errorMessage = 'Some error occured and your request cannot be processed at this time';
+    try {
+        const {
+            API_KEY,
+            AUTH_DOMAIN,
+            DATABASE_URL,
+            PROJECT_ID,
+            STORAGE_BUCKET,
+            MESSANGING_SENDER_ID
+        } = process.env;
+    
+        const config = {
+            apiKey: API_KEY,
+            authDomain: AUTH_DOMAIN,
+            databaseURL: DATABASE_URL,
+            projectId: PROJECT_ID,
+            storageBucket: STORAGE_BUCKET,
+            messagingSenderId: MESSANGING_SENDER_ID
+        };
+    
+        if (!firebase.apps.length) {
+            firebase.initializeApp(config);
+        }
+    
+        return (req, res) => {
+            console.log(`START: [${req.method}]`, req.originalUrl);
+            const unfoldWaterfall = waterfall.map((fn, index) => {
+                return (...args) => {
+                    console.log(index !== waterfall.length - 1 
+                        ? `\tRunning block: ${fn.name}`
+                        : `DONE: [${req.method}]  ${req.originalUrl}`, 
+                    );
 
-    const config = {
-        apiKey: API_KEY,
-        authDomain: AUTH_DOMAIN,
-        databaseURL: DATABASE_URL,
-        projectId: PROJECT_ID,
-        storageBucket: STORAGE_BUCKET,
-        messagingSenderId: MESSANGING_SENDER_ID
-    };
-
-    if (!firebase.apps.length) {
-        firebase.initializeApp(config);
-    }
-
-    return (req, res) => {
-        console.log(`START: [${req.method}]`, req.originalUrl);
-        const unfoldWaterfall = waterfall.map((fn, index) => {
-            return (...args) => {
-                console.log(index !== waterfall.length - 1 
-                    ? `\tRunning block: ${fn.name}`
-                    : `DONE: [${req.method}]  ${req.originalUrl}`, 
-                );
-                fn(...args);
-            }
+                    try {
+                        fn(...args);
+                    } catch (e) {
+                        global.console.error('CODE ERROR', e);
+                        return response.error(res, {
+                            message: errorMessage
+                        });
+                    }
+                }
+            });
+    
+            unfoldWaterfall[0] = async.apply(unfoldWaterfall[0], req, res, {firebase, db });
+    
+            // Do Async Op
+            async.waterfall(
+                unfoldWaterfall.slice(0, -1),
+                unfoldWaterfall.slice(-1)[0]
+            );
+        }
+    } catch (e) {
+        global.console.error('CODE ERROR', e);
+        return response.error(res, {
+            message: errorMessage
         });
-
-        unfoldWaterfall[0] = async.apply(unfoldWaterfall[0], req, res, {firebase, db });
-
-        // Do Async Op
-        async.waterfall(
-            unfoldWaterfall.slice(0, -1),
-            unfoldWaterfall.slice(-1)[0]
-        );
     }
 }
 
