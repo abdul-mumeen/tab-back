@@ -12,7 +12,7 @@ services:
       - 8031:4200
 
   mysql:
-    image: mysql
+    image: mysql:8
     environment:
       MYSQL_ROOT_PASSWORD: 0987654321
       MYSQL_DATABASE: tabby
@@ -21,4 +21,4 @@ services:
     volumes:
       - ./db-data:/var/lib/mysql
     ports:
-      - 3306:3306
+      - 3308:3306
