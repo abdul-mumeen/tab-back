@@ -17,3 +17,5 @@ db-data/
 dist/
 tmp
 out-tsc
+.env
+*.pem

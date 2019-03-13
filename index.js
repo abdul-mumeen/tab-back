@@ -18,6 +18,8 @@ app.use(bodyParser.json());
 
 basicController(app);
 
-app.listen(8080, () => {
+const {PORT=7000} = process.env.PORT;
+
+app.listen(PORT, () => {
     console.log('listening on port 8080');
 });

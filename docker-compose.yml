@@ -1,6 +1,16 @@
 version: '3.1'
 
 services:
+  backend:
+    build: ./
+    ports:
+      - 7000:7000
+  
+  frontend:
+    build: ./tab-front
+    ports:
+      - 8031:4200
+
   mysql:
     image: mysql
     environment:
