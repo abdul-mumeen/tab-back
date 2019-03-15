@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 // Controller Imports
-const basicController = require('./api/controllers/basic-controller');
+// const basicController = require('./api/controllers/basic-controller');
 const routes = require('./src/routes');
 
 const corsOptions = {

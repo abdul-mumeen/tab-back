@@ -8,8 +8,8 @@ const mysqlOpts = {
     user : 'joshua',
     password : 'password',
     database : 'tabby',
-    host: 'localhost',
-    port: '3308',
+    host: 'mysql',
+    port: '3306',
 };
 
 const db = require('mysql').createConnection(mysqlOpts);

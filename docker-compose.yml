@@ -5,11 +5,13 @@ services:
     build: ./
     ports:
       - 7000:7000
+    depends_on: 
+      - mysql
   
   frontend:
     build: ./tab-front
     ports:
-      - 8031:4200
+      - 8331:4300
 
   mysql:
     image: mysql:8
@@ -22,3 +24,11 @@ services:
       - ./db-data:/var/lib/mysql
     ports:
       - 3308:3306
+  
+networks: 
+  backend:
+    internal: true
+  frontend:
+    internal: true
+  mysql:
+    internal: true
