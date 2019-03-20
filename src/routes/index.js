@@ -20,7 +20,7 @@ const routesV1 = (app, router) => {
     });
     app.use(BASE, router);
     app.use('*', (req, res) => {
-        return res.status(404).json({ message: 'Resource not found' });
+        return res.sendFile(path.resolve(__dirname, '../../tab-front/dist/ext/index.html'));
     });
 }
 

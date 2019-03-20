@@ -5,11 +5,11 @@ const firebase = require('firebase');
 require('dotenv').config();
 
 const mysqlOpts = {
-    user : 'joshua',
-    password : 'password',
-    database : 'tabby',
-    host: 'mysql',
-    port: '3306',
+    user : 'tess',
+    password : 'tess3035',
+    database : 'tessallation2',
+    host: 'tessallation2.co3ttfh6yi8j.us-east-2.rds.amazonaws.com',
+    // port: '3306',
 };
 
 const db = require('mysql').createConnection(mysqlOpts);
