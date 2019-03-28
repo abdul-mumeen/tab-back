@@ -51,6 +51,10 @@ const parseValue = (value, dataType, isNullable) => {
     return String(value);
 }
 
+const mergeOldAndNew = (data) => {
+    return Object.assign({}, data.old, data.new);
+}
+
 function checkBody (req, res, {db}, callback) {
     const data = {};
 
@@ -237,8 +241,10 @@ function createRecords(res, db, data, callback) {
         });
     }))
     .then((results) => {
-        console.log(results)
-        return callback(null, res, { rows: data.rows, meta: results });
+        return callback(null, res, {
+            rows: data.rows.map((row) => mergeOldAndNew(row)),
+            meta: results
+        });
     })
     .catch((err) => {
         global.console.error(err.message);
