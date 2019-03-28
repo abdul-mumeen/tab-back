@@ -7,6 +7,7 @@ module.exports = createRoute(
     ['get', '/:name', 'one'],
     ['delete', '/:name', 'drop'],
     ['post', '/:name/records', 'createRecord'],
+    ['put', '/:name/records', 'updateRecord'],
   ],
   'table'
 );
