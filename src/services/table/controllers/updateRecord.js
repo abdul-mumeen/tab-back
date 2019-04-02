@@ -6,11 +6,12 @@ const toString = (obj) => {
     return sorted.reduce((acc, field) => acc += obj[field], '');
 } 
 
-const parseSQLValues = (values, separator) => {
+const parseSQLValues = (values, separator, includeNull= true) => {
     return Object
         .keys(values)
+        .filter((col) => !includeNull && values[col] !== null)
         .map((col) => `${col} = ${typeof values[col] === 'string' ? `'${values[col]}'` : values[col]}`)
-        .join(separator)
+        .join(separator);
 }
 
 const runQuery = (db, query) => {
@@ -211,7 +212,7 @@ function createRecords(res, db, data, callback) {
             if (row.length === 1) {
                 console.log(row[0]);
                 const newValues = parseSQLValues(row[0].new, ', ');
-                const oldValues = parseSQLValues(row[0].old, ' AND ');
+                const oldValues = parseSQLValues(row[0].old, ' AND ', false);
 
                 queries.push(`UPDATE ${data.tableName} SET ${newValues} WHERE ${oldValues}`);
             } else {
