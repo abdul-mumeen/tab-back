@@ -6,11 +6,11 @@ const toString = (obj) => {
     return sorted.reduce((acc, field) => acc += obj[field], '');
 } 
 
-const parseSQLValues = (values, separator, includeNull= true) => {
+const parseSQLValues = (values, separator, includeNull=true) => {
     return Object
         .keys(values)
-        .filter((col) => !includeNull && values[col] !== null)
-        .map((col) => `${col} = ${typeof values[col] === 'string' ? `'${values[col]}'` : values[col]}`)
+        .filter(col => includeNull ? true : !!values[col])
+        .map(col => `${col} = ${typeof values[col] === 'string' ? `'${values[col]}'` : values[col]}`)
         .join(separator);
 }
 
@@ -218,7 +218,7 @@ function createRecords(res, db, data, callback) {
             } else {
                 queries =  row.map((duplicate) => {
                     const newValues = parseSQLValues(duplicate.new, ', ');
-                    const oldValues = parseSQLValues(duplicate.old, ' AND ');;
+                    const oldValues = parseSQLValues(duplicate.old, ' AND ', false);
 
                     return `
                         UPDATE ${data.tableName} 
