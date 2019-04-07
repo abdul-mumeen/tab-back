@@ -35,6 +35,10 @@ function checkBody (req, res, {db}, callback) {
         rows: {
             type: 'array',
             required: true,
+        },
+        truncate: {
+          type: 'boolean',
+          required: false,
         }
     }, (err, body) => {
         if (err) {
@@ -51,6 +55,7 @@ function checkBody (req, res, {db}, callback) {
         };
         data.rows = body.rows;
         data.tableName = req.params.name;
+        data.truncate = body.truncate || false;
         return callback(null, res, db, data);
     });
 }
@@ -143,6 +148,31 @@ function validateFields (res, db, data, callback) {
     return callback(null, res, db, data);
 }
 
+function truncateTable(res, db, data, callback) {
+  if (data.truncate){
+    return new Promise((resolve, reject) => {
+      const query = `TRUNCATE TABLE ${data.tableName};`;
+      return db.query(query, (err, result) => {
+          if (err) {
+              return reject(err);
+          }
+
+          return resolve(result);
+      })
+    }).then((results) => {
+        return callback(null, res, db, data);
+    }).catch((err) => {
+        global.console.error(err.message);
+        return callback({
+            code: 500,
+            message: err.message
+        }, res);
+    });
+  }else {
+    return callback(null, res, db, data);
+  }
+}
+
 function createRecords(res, db, data, callback) {
     return Promise.all(data.rows.map((row) => {
         return new Promise((resolve, reject) => {
@@ -188,6 +218,7 @@ module.exports = createController([
     findTable,
     parseColumn,
     validateFields,
+    truncateTable,
     createRecords,
     done
 ]);
