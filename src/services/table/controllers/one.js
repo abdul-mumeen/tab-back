@@ -75,7 +75,7 @@ function parseTableColumn (res, db, data, callback) {
 }
 
 function fetchTableTows (res, db, data, callback) {
-    let query = `SELECT * FROM ${data.tableName} LIMIT ${data.limit}`;
+    let query = `SELECT * FROM ${data.tableName}`;
     return db.query(query, (err, result) => {
         if (err) {
             return callback({
