@@ -5,6 +5,7 @@ const isValidColumnType = (type) => {
     const types = {
         'VARCHAR': true,
         'INT': true,
+        'DATE': true,
         // 'STRING':  true,
         'TEXT':  true,
         'FLOAT': true

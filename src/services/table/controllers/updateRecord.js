@@ -210,7 +210,6 @@ function createRecords(res, db, data, callback) {
         return new Promise((resolve, reject) => {
             let queries = [];
             if (row.length === 1) {
-                console.log(row[0]);
                 const newValues = parseSQLValues(row[0].new, ', ');
                 const oldValues = parseSQLValues(row[0].old, ' AND ', false);
 
