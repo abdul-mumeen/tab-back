@@ -122,9 +122,5 @@ function updateRecords(data, callback, {sheetdb}) {
 module.exports = create([
     checkBody,
     findTable,
-    // parseColumn,
-    // validateFields,
-    // findDuplicates,
     updateRecords,
-    // done,
 ]);
