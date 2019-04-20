@@ -4,6 +4,7 @@ const async = require('async');
 const firebase = require('firebase');
 
 const constants = require('../../constants');
+const systemdbOptions = require('../../knexfile');
 require('dotenv').config();
 
 const mysqlOpts = {
@@ -25,6 +26,7 @@ const knex = require('knex')({
     connection: mysqlOpts
 });
 
+const systemdb = require('knex')(systemdbOptions[process.env.NODE_ENV]);
 
 const createRoute = (routes, serviceName) => {
     const controllerPath = path.join(__dirname, `../services/${serviceName}/controllers`);
@@ -196,5 +198,6 @@ module.exports = {
     createController,
     listTables,
     db,
-    knex
+    knex,
+    systemdb,
 };

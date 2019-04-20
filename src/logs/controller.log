@@ -7688,3 +7688,4571 @@
     "message": "Done!",
     "timestamp": "20-04-2019 13:31:49"
 }
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 14:01:50"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 14:03:08"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:03:08"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorcallback is not a function",
+    "stack": "TypeError: callback is not a function\n    at check (/Users/inumidunamao/projects/freelenace/tab-back/src/services/connect/controllers/connect.js:59:18)\n    at module.exports (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/body-checker/index.js:33:13)\n    at checkBody (/Users/inumidunamao/projects/freelenace/tab-back/src/services/connect/controllers/connect.js:32:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:55:44)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:66:19\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at Object.waterfall (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5334:5)\n    at /Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:69:19\n    at Layer.handle [as handle_request] (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/router/route.js:137:13)\n    at async.waterfall (/Users/inumidunamao/projects/freelenace/tab-back/src/middlewares/allow/admin.js:10:7)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:473:16\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5329:29)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at getAdmin (/Users/inumidunamao/projects/freelenace/tab-back/src/middlewares/allow/admin.js:21:10)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)",
+    "timestamp": "20-04-2019 14:03:08"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 14:03:35"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 14:03:39"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:03:39"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 14:03:39"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorres.status is not a function",
+    "stack": "TypeError: res.status is not a function\n    at Object.error (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/index.js:48:20)\n    at done (/Users/inumidunamao/projects/freelenace/tab-back/src/services/connect/controllers/connect.js:303:25)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:55:44)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:473:16\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5329:29)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at check (/Users/inumidunamao/projects/freelenace/tab-back/src/services/connect/controllers/connect.js:59:18)\n    at module.exports (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/body-checker/index.js:33:13)\n    at checkBody (/Users/inumidunamao/projects/freelenace/tab-back/src/services/connect/controllers/connect.js:32:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:55:44)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:66:19\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at Object.waterfall (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5334:5)\n    at /Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:69:19\n    at Layer.handle [as handle_request] (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/router/route.js:137:13)",
+    "timestamp": "20-04-2019 14:03:39"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 14:04:09"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 14:04:12"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:04:12"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 14:04:12"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 14:04:25"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:04:25"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 14:04:25"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 14:04:37"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 14:04:38"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:04:38"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 14:04:38"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 14:04:49"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:04:49"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 14:04:49"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 14:04:58"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:04:58"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 14:04:58"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 14:05:08"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:05:08"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 14:05:08"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 14:05:17"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:05:17"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 14:05:17"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 14:05:32"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:05:32"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:05:32"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorrequire(...)(...).then is not a function",
+    "stack": "TypeError: require(...)(...).then is not a function\n    at createConnection (/Users/inumidunamao/projects/freelenace/tab-back/src/services/connect/controllers/connect.js:92:6)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:55:44)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at check (/Users/inumidunamao/projects/freelenace/tab-back/src/services/connect/controllers/connect.js:76:16)\n    at module.exports (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/body-checker/index.js:56:9)\n    at checkBody (/Users/inumidunamao/projects/freelenace/tab-back/src/services/connect/controllers/connect.js:32:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:55:44)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:66:19\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at Object.waterfall (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5334:5)\n    at /Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:69:19\n    at Layer.handle [as handle_request] (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/router/route.js:137:13)\n    at async.waterfall (/Users/inumidunamao/projects/freelenace/tab-back/src/middlewares/allow/admin.js:10:7)",
+    "timestamp": "20-04-2019 14:05:32"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 14:12:36"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 14:12:39"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:12:39"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:12:39"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 14:13:05"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:13:05"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:13:05"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 14:13:08"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 14:13:09"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:13:09"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:13:09"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 14:16:24"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 14:16:27"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:16:27"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:16:27"
+}
+{
+    "code": "ER_NOT_SUPPORTED_AUTH_MODE",
+    "level": "error",
+    "message": "ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client",
+    "timestamp": "20-04-2019 14:16:27"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 14:16:27"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 14:16:53"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:16:53"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:16:53"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorKnex: run\n$ npm install pg --save\nCannot find module 'pg'",
+    "stack": "Error: Knex: run\n$ npm install pg --save\nCannot find module 'pg'\n    at Client_PG.initializeDriver (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/knex/lib/client.js:257:13)\n    at Client_PG.Client (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/knex/lib/client.js:84:10)\n    at new Client_PG (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/knex/lib/dialects/postgres/index.js:31:19)\n    at Knex (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/knex/lib/knex.js:57:42)\n    at createConnection (/Users/inumidunamao/projects/freelenace/tab-back/src/services/connect/controllers/connect.js:82:33)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:55:44)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at check (/Users/inumidunamao/projects/freelenace/tab-back/src/services/connect/controllers/connect.js:76:16)\n    at module.exports (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/body-checker/index.js:56:9)\n    at checkBody (/Users/inumidunamao/projects/freelenace/tab-back/src/services/connect/controllers/connect.js:32:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:55:44)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:66:19\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at Object.waterfall (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5334:5)",
+    "timestamp": "20-04-2019 14:16:54"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 14:42:07"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 14:42:31"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:42:31"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:42:31"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 14:42:32"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 14:42:45"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 14:42:54"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:42:54"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:42:54"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 14:42:55"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 14:47:40"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:47:40"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:47:40"
+}
+{
+    "code": "ER_NOT_SUPPORTED_AUTH_MODE",
+    "level": "error",
+    "message": "ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client",
+    "timestamp": "20-04-2019 14:47:40"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 14:47:40"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 14:49:49"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:49:49"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:49:49"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 14:49:49"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 14:51:40"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 14:51:41"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:51:41"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 14:51:41"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 14:51:41"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 15:06:35"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 15:09:25"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 15:09:29"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:09:29"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:09:29"
+}
+{
+    "code": "ER_NO_SUCH_TABLE",
+    "level": "error",
+    "message": "insert into `tessellation_connections` (`connection`, `connection_id`, `created_by`) values ({\"host\":\"127.0.0.1\",\"password\":\"password\",\"user\":\"joshua\",\"database\":\"tabby\",\"port\":3308}, '31', DEFAULT) - ER_NO_SUCH_TABLE: Table 'tabby.tessellation_connections' doesn't exist",
+    "timestamp": "20-04-2019 15:09:29"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 15:09:29"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 15:10:04"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 15:10:06"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:10:06"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:10:06"
+}
+{
+    "code": "23502",
+    "level": "error",
+    "message": "insert into \"tessellation_connections\" (\"connection\", \"connection_id\", \"created_by\") values ($1, $2, DEFAULT) - null value in column \"created_by\" violates not-null constraint",
+    "timestamp": "20-04-2019 15:10:06"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 15:10:06"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 15:11:16"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 15:11:18"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:11:18"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:11:18"
+}
+{
+    "code": "23502",
+    "level": "error",
+    "message": "insert into \"tessellation_connections\" (\"connection\", \"connection_id\", \"created_by\") values ($1, $2, DEFAULT) - null value in column \"created_by\" violates not-null constraint",
+    "timestamp": "20-04-2019 15:11:18"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 15:11:18"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 15:12:03"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:12:03"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:12:03"
+}
+{
+    "code": "23502",
+    "level": "error",
+    "message": "insert into \"tessellation_connections\" (\"connection\", \"connection_id\", \"created_by\") values ($1, $2, DEFAULT) - null value in column \"created_by\" violates not-null constraint",
+    "timestamp": "20-04-2019 15:12:03"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 15:12:03"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 15:12:07"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 15:12:08"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:12:08"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:12:08"
+}
+{
+    "code": "23502",
+    "level": "error",
+    "message": "insert into \"tessellation_connections\" (\"connection\", \"connection_id\", \"created_by\") values ($1, $2, DEFAULT) - null value in column \"created_by\" violates not-null constraint",
+    "timestamp": "20-04-2019 15:12:09"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 15:12:09"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 15:12:29"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 15:12:33"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:12:33"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:12:33"
+}
+{
+    "code": "23502",
+    "level": "error",
+    "message": "insert into \"tessellation_connections\" (\"connection\", \"connection_id\", \"created_by\") values ($1, $2, DEFAULT) - null value in column \"created_by\" violates not-null constraint",
+    "timestamp": "20-04-2019 15:12:33"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 15:12:33"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 15:13:53"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 15:14:05"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:14:05"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:14:05"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 15:14:05"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 15:15:48"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 15:15:49"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:15:49"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:15:49"
+}
+{
+    "code": "23505",
+    "level": "error",
+    "message": "insert into \"tessellation_connections\" (\"connection\", \"connection_id\", \"created_by\") values ($1, $2, $3) - duplicate key value violates unique constraint \"tessellation_connections_connection_id_unique\"",
+    "timestamp": "20-04-2019 15:15:49"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 15:15:49"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 15:20:38"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 15:20:40"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:20:40"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:20:40"
+}
+{
+    "code": "23505",
+    "level": "error",
+    "message": "insert into \"tessellation_connections\" (\"connection\", \"connection_id\", \"created_by\") values ($1, $2, $3) - duplicate key value violates unique constraint \"tessellation_connections_connection_id_unique\"",
+    "timestamp": "20-04-2019 15:20:41"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 15:20:41"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 15:21:21"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 15:21:22"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:21:22"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:21:22"
+}
+{
+    "code": "23505",
+    "level": "error",
+    "message": "insert into \"tessellation_connections\" (\"connection\", \"connection_id\", \"created_by\") values ($1, $2, $3) - duplicate key value violates unique constraint \"tessellation_connections_connection_id_unique\"",
+    "timestamp": "20-04-2019 15:21:22"
+}
+{
+    "level": "error",
+    "message": "fomartKnexError is not a function",
+    "timestamp": "20-04-2019 15:21:22"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 15:21:22"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 15:21:37"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 15:21:38"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:21:38"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:21:38"
+}
+{
+    "code": "23505",
+    "level": "error",
+    "message": "insert into \"tessellation_connections\" (\"connection\", \"connection_id\", \"created_by\") values ($1, $2, $3) - duplicate key value violates unique constraint \"tessellation_connections_connection_id_unique\"",
+    "timestamp": "20-04-2019 15:21:38"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 15:21:38"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 15:24:12"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 15:24:13"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:24:13"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:24:13"
+}
+{
+    "code": "23505",
+    "level": "error",
+    "message": "insert into \"tessellation_connections\" (\"connection\", \"connection_id\", \"created_by\") values ($1, $2, $3) - duplicate key value violates unique constraint \"tessellation_connections_connection_id_unique\"",
+    "timestamp": "20-04-2019 15:24:13"
+}
+{
+    "level": "error",
+    "message": "err is not defined",
+    "timestamp": "20-04-2019 15:24:13"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 15:24:13"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 15:24:27"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 15:24:29"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:24:29"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:24:29"
+}
+{
+    "code": "23505",
+    "level": "error",
+    "message": "insert into \"tessellation_connections\" (\"connection\", \"connection_id\", \"created_by\") values ($1, $2, $3) - duplicate key value violates unique constraint \"tessellation_connections_connection_id_unique\"",
+    "timestamp": "20-04-2019 15:24:29"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 15:24:29"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 15:31:35"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:31:35"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:31:35"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:31:35"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:31:36"
+}
+{
+    "method": "GET",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 15:31:36"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 15:31:47"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 15:32:52"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 15:33:14"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 15:34:07"
+}
+{
+    "message": [
+        {
+            "connection": {
+                "host": "127.0.0.1",
+                "password": "password",
+                "user": "joshua",
+                "database": "tabby",
+                "port": 3308
+            }
+        }
+    ],
+    "level": "info",
+    "timestamp": "20-04-2019 15:35:08"
+}
+{
+    "message": [],
+    "level": "info",
+    "timestamp": "20-04-2019 15:35:15"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 15:36:24"
+}
+{
+    "level": "error",
+    "message": "No connection found for id 3143",
+    "timestamp": "20-04-2019 15:36:26"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 15:49:08"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 15:49:13"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 15:50:43"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 15:50:45"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 15:51:26"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 15:51:28"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 15:53:47"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 15:55:16"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 15:55:19"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 15:56:43"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 15:56:46"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 15:57:47"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 15:57:49"
+}
+{
+    "method": "POST",
+    "name": "initWaterfall",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:57:49"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorknex: Required configuration option 'client' is missing.",
+    "stack": "Error: knex: Required configuration option 'client' is missing.\n    at new Client (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/knex/lib/client.js:74:11)\n    at Knex (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/knex/lib/knex.js:57:42)\n    at initWaterfall (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:44:52)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:80:44)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:66:19\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at Object.waterfall (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5334:5)\n    at /Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:94:19\n    at Layer.handle [as handle_request] (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/router/route.js:137:13)\n    at async.waterfall (/Users/inumidunamao/projects/freelenace/tab-back/src/middlewares/allow/admin.js:10:7)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:473:16\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5329:29)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at getAdmin (/Users/inumidunamao/projects/freelenace/tab-back/src/middlewares/allow/admin.js:21:10)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)",
+    "timestamp": "20-04-2019 15:57:49"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 15:58:37"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 15:58:37"
+}
+{
+    "method": "POST",
+    "name": "initWaterfall",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:58:37"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:58:37"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 15:58:37"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 15:58:37"
+}
+{
+    "level": "error",
+    "message": "No connection found for id 3143",
+    "timestamp": "20-04-2019 15:58:57"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:00:26"
+}
+{
+    "level": "error",
+    "message": "No connection found for id 3143",
+    "timestamp": "20-04-2019 16:00:27"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:00:44"
+}
+{
+    "method": "GET",
+    "name": "initWaterfall",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:00:44"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:00:44"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:00:44"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:00:44"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:00:44"
+}
+{
+    "method": "GET",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:00:44"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:01:17"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:01:20"
+}
+{
+    "method": "GET",
+    "name": "initWaterfall",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:01:20"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:01:20"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:01:20"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:01:20"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:01:20"
+}
+{
+    "method": "GET",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:01:20"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:17:27"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:17:31"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:17:31"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorsheetdb.query is not a function",
+    "stack": "TypeError: sheetdb.query is not a function\n    at findTable (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:10:20)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:81:55)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:66:19\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at Object.waterfall (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5334:5)\n    at createController (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:100:23)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at unfoldWaterfall (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:93:24)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at sheetdb.raw.then (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:52:36)\n    at tryCatcher (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:512:31)",
+    "timestamp": "20-04-2019 16:17:31"
+}
+{
+    "level": "error",
+    "message": "Callback was already called.",
+    "timestamp": "20-04-2019 16:17:31"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:18:59"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:19:01"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:19:01"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorsheetdb.query is not a function",
+    "stack": "TypeError: sheetdb.query is not a function\n    at findTable (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:10:20)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:81:55)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:66:19\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at Object.waterfall (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5334:5)\n    at createController (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:101:23)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at unfoldWaterfall (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:93:24)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at sheetdb.raw.then (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:52:36)\n    at tryCatcher (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:512:31)",
+    "timestamp": "20-04-2019 16:19:01"
+}
+{
+    "level": "error",
+    "message": "Callback was already called.",
+    "timestamp": "20-04-2019 16:19:01"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:21:58"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:22:00"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:22:00"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:22:00"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:22:00"
+}
+{
+    "level": "error",
+    "message": "Controller Level errordb.query is not a function",
+    "stack": "TypeError: db.query is not a function\n    at data.tableNames.forEach (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:40:16)\n    at Array.forEach (<anonymous>)\n    at fetchTableInfo (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:38:25)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:81:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at formatResult (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:31:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:81:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at sheetdb.raw.then (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:15:20)\n    at tryCatcher (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:512:31)\n    at Promise._settlePromise (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:569:18)",
+    "timestamp": "20-04-2019 16:22:00"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCallback was already called.",
+    "stack": "Error: Callback was already called.\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:966:32\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:85:36)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at formatResult (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:31:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:81:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at sheetdb.raw.then (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:15:20)\n    at tryCatcher (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:512:31)\n    at Promise._settlePromise (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:569:18)\n    at Promise._settlePromise0 (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:614:10)\n    at Promise._settlePromises (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:694:18)",
+    "timestamp": "20-04-2019 16:22:00"
+}
+{
+    "level": "error",
+    "message": "Callback was already called.",
+    "timestamp": "20-04-2019 16:22:00"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:22:16"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:22:21"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:22:21"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:22:21"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:22:21"
+}
+{
+    "level": "error",
+    "message": "Controller Level errordb.query is not a function",
+    "stack": "TypeError: db.query is not a function\n    at data.tableNames.forEach (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:40:16)\n    at Array.forEach (<anonymous>)\n    at fetchTableInfo (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:38:25)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:81:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at formatResult (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:31:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:81:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at sheetdb.raw.then (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:15:20)\n    at tryCatcher (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:512:31)\n    at Promise._settlePromise (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:569:18)",
+    "timestamp": "20-04-2019 16:22:21"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCallback was already called.",
+    "stack": "Error: Callback was already called.\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:966:32\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:85:36)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at formatResult (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:31:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:81:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at sheetdb.raw.then (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:15:20)\n    at tryCatcher (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:512:31)\n    at Promise._settlePromise (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:569:18)\n    at Promise._settlePromise0 (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:614:10)\n    at Promise._settlePromises (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:694:18)",
+    "timestamp": "20-04-2019 16:22:21"
+}
+{
+    "level": "error",
+    "message": "Callback was already called.",
+    "timestamp": "20-04-2019 16:22:21"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:23:30"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:23:33"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:23:33"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:23:33"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:23:33"
+}
+{
+    "level": "error",
+    "message": "Controller Level errordb.query is not a function",
+    "stack": "TypeError: db.query is not a function\n    at data.tableNames.forEach (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:40:16)\n    at Array.forEach (<anonymous>)\n    at fetchTableInfo (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:38:25)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:81:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at formatResult (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:31:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:81:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at sheetdb.raw.then (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:15:20)\n    at tryCatcher (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:512:31)\n    at Promise._settlePromise (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:569:18)",
+    "timestamp": "20-04-2019 16:23:33"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCallback was already called.",
+    "stack": "Error: Callback was already called.\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:966:32\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:85:36)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at formatResult (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:31:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:81:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at sheetdb.raw.then (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:15:20)\n    at tryCatcher (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:512:31)\n    at Promise._settlePromise (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:569:18)\n    at Promise._settlePromise0 (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:614:10)\n    at Promise._settlePromises (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:694:18)",
+    "timestamp": "20-04-2019 16:23:33"
+}
+{
+    "level": "error",
+    "message": "Callback was already called.",
+    "timestamp": "20-04-2019 16:23:33"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:25:24"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:25:25"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:25:25"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:25:25"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:25:25"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:25:25"
+}
+{
+    "method": "GET",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:25:25"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCan't set headers after they are sent.",
+    "stack": "Error: Can't set headers after they are sent.\n    at validateHeader (_http_outgoing.js:489:11)\n    at ServerResponse.setHeader (_http_outgoing.js:496:3)\n    at ServerResponse.header (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/response.js:767:10)\n    at ServerResponse.send (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/response.js:170:12)\n    at ServerResponse.json (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/response.js:267:15)\n    at Object.ok (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/index.js:74:32)\n    at done (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:94:25)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:81:55)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:473:16\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5329:29)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at parseTableInformation (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:83:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:81:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16",
+    "timestamp": "20-04-2019 16:25:25"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCallback was already called.",
+    "stack": "Error: Callback was already called.\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:966:32\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:85:36)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:473:16\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5329:29)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at parseTableInformation (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:83:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:81:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at sheetdb.raw.then (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:50:32)\n    at tryCatcher (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:512:31)\n    at Promise._settlePromise (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:569:18)\n    at Promise._settlePromise0 (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:614:10)\n    at Promise._settlePromises (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:694:18)",
+    "timestamp": "20-04-2019 16:25:25"
+}
+{
+    "level": "error",
+    "timestamp": "20-04-2019 16:25:25"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:25:56"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:25:58"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:25:58"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:25:58"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:25:58"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:25:58"
+}
+{
+    "method": "GET",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:25:58"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCan't set headers after they are sent.",
+    "stack": "Error: Can't set headers after they are sent.\n    at validateHeader (_http_outgoing.js:489:11)\n    at ServerResponse.setHeader (_http_outgoing.js:496:3)\n    at ServerResponse.header (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/response.js:767:10)\n    at ServerResponse.send (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/response.js:170:12)\n    at ServerResponse.json (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/response.js:267:15)\n    at Object.ok (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/index.js:74:32)\n    at done (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:94:25)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:81:55)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:473:16\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5329:29)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at parseTableInformation (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:83:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:81:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16",
+    "timestamp": "20-04-2019 16:25:58"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCallback was already called.",
+    "stack": "Error: Callback was already called.\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:966:32\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:85:36)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:473:16\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5329:29)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at parseTableInformation (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:83:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:81:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at sheetdb.raw.then (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:50:32)\n    at tryCatcher (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:512:31)\n    at Promise._settlePromise (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:569:18)\n    at Promise._settlePromise0 (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:614:10)\n    at Promise._settlePromises (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:694:18)",
+    "timestamp": "20-04-2019 16:25:58"
+}
+{
+    "level": "error",
+    "timestamp": "20-04-2019 16:25:58"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:28:44"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:28:50"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:28:50"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCannot read property 'raw' of undefined",
+    "stack": "TypeError: Cannot read property 'raw' of undefined\n    at findTable (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:10:20)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:81:55)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:66:19\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at Object.waterfall (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5334:5)\n    at createController (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:100:23)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at unfoldWaterfall (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:93:24)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at sheetdb.raw.then (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:52:36)\n    at tryCatcher (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:512:31)",
+    "timestamp": "20-04-2019 16:28:50"
+}
+{
+    "level": "error",
+    "message": "Callback was already called.",
+    "timestamp": "20-04-2019 16:28:50"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:29:24"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:29:25"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:29:25"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:29:25"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:29:25"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:29:26"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCannot read property 'map' of undefined",
+    "stack": "TypeError: Cannot read property 'map' of undefined\n    at parseTableInformation (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:66:10)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:81:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at sheetdb.raw.then (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:48:32)\n    at tryCatcher (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:512:31)\n    at Promise._settlePromise (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:569:18)\n    at Promise._settlePromise0 (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:614:10)\n    at Promise._settlePromises (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:694:18)\n    at _drainQueueStep (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/async.js:138:12)\n    at _drainQueue (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/async.js:131:9)\n    at Async._drainQueues (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/async.js:147:5)\n    at Immediate.Async.drainQueues (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/async.js:17:14)\n    at runCallback (timers.js:785:20)",
+    "timestamp": "20-04-2019 16:29:26"
+}
+{
+    "level": "error",
+    "timestamp": "20-04-2019 16:29:26"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:29:35"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:29:35"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:29:35"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:29:35"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:29:35"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCannot read property 'map' of undefined",
+    "stack": "TypeError: Cannot read property 'map' of undefined\n    at parseTableInformation (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:66:10)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:81:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at sheetdb.raw.then (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:48:32)\n    at tryCatcher (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:512:31)\n    at Promise._settlePromise (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:569:18)\n    at Promise._settlePromise0 (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:614:10)\n    at Promise._settlePromises (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:694:18)\n    at _drainQueueStep (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/async.js:138:12)\n    at _drainQueue (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/async.js:131:9)\n    at Async._drainQueues (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/async.js:147:5)\n    at Immediate.Async.drainQueues (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/async.js:17:14)\n    at runCallback (timers.js:785:20)",
+    "timestamp": "20-04-2019 16:29:35"
+}
+{
+    "level": "error",
+    "timestamp": "20-04-2019 16:29:35"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:31:14"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:31:16"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:31:16"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:31:16"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:31:16"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:31:17"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCannot read property 'map' of undefined",
+    "stack": "TypeError: Cannot read property 'map' of undefined\n    at parseTableInformation (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:66:10)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:82:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at sheetdb.raw.then (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:48:32)\n    at tryCatcher (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:512:31)\n    at Promise._settlePromise (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:569:18)\n    at Promise._settlePromise0 (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:614:10)\n    at Promise._settlePromises (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:694:18)\n    at _drainQueueStep (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/async.js:138:12)\n    at _drainQueue (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/async.js:131:9)\n    at Async._drainQueues (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/async.js:147:5)\n    at Immediate.Async.drainQueues (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/async.js:17:14)\n    at runCallback (timers.js:785:20)",
+    "timestamp": "20-04-2019 16:31:17"
+}
+{
+    "level": "error",
+    "timestamp": "20-04-2019 16:31:17"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:32:02"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:32:04"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:32:04"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:32:04"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:32:04"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:32:04"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCannot read property 'map' of undefined",
+    "stack": "TypeError: Cannot read property 'map' of undefined\n    at parseTableInformation (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:67:10)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:82:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at sheetdb.raw.then (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:49:32)\n    at tryCatcher (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:512:31)\n    at Promise._settlePromise (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:569:18)\n    at Promise._settlePromise0 (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:614:10)\n    at Promise._settlePromises (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:694:18)\n    at _drainQueueStep (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/async.js:138:12)\n    at _drainQueue (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/async.js:131:9)\n    at Async._drainQueues (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/async.js:147:5)\n    at Immediate.Async.drainQueues (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/async.js:17:14)\n    at runCallback (timers.js:785:20)",
+    "timestamp": "20-04-2019 16:32:04"
+}
+{
+    "level": "error",
+    "timestamp": "20-04-2019 16:32:04"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:32:43"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:32:46"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:32:46"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:32:46"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:32:46"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:32:46"
+}
+{
+    "method": "GET",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:32:46"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCan't set headers after they are sent.",
+    "stack": "Error: Can't set headers after they are sent.\n    at validateHeader (_http_outgoing.js:489:11)\n    at ServerResponse.setHeader (_http_outgoing.js:496:3)\n    at ServerResponse.header (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/response.js:767:10)\n    at ServerResponse.send (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/response.js:170:12)\n    at ServerResponse.json (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/response.js:267:15)\n    at Object.ok (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/index.js:74:32)\n    at done (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:93:25)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:82:55)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:473:16\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5329:29)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at parseTableInformation (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:82:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:82:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16",
+    "timestamp": "20-04-2019 16:32:46"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCallback was already called.",
+    "stack": "Error: Callback was already called.\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:966:32\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:86:36)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:473:16\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5329:29)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at parseTableInformation (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:82:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:82:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at sheetdb.raw.then (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:49:32)\n    at tryCatcher (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:512:31)\n    at Promise._settlePromise (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:569:18)\n    at Promise._settlePromise0 (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:614:10)\n    at Promise._settlePromises (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:694:18)",
+    "timestamp": "20-04-2019 16:32:46"
+}
+{
+    "level": "error",
+    "timestamp": "20-04-2019 16:32:46"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:33:39"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:33:41"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:33:41"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:33:41"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:33:41"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:33:41"
+}
+{
+    "method": "GET",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:33:41"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCan't set headers after they are sent.",
+    "stack": "Error: Can't set headers after they are sent.\n    at validateHeader (_http_outgoing.js:489:11)\n    at ServerResponse.setHeader (_http_outgoing.js:496:3)\n    at ServerResponse.header (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/response.js:767:10)\n    at ServerResponse.send (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/response.js:170:12)\n    at ServerResponse.json (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/response.js:267:15)\n    at Object.ok (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/index.js:74:32)\n    at done (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:93:25)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:82:55)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:473:16\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5329:29)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at parseTableInformation (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:82:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:82:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16",
+    "timestamp": "20-04-2019 16:33:41"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCallback was already called.",
+    "stack": "Error: Callback was already called.\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:966:32\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:86:36)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:473:16\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5329:29)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at parseTableInformation (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:82:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:82:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at sheetdb.raw.then (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:49:32)\n    at tryCatcher (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:512:31)\n    at Promise._settlePromise (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:569:18)\n    at Promise._settlePromise0 (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:614:10)\n    at Promise._settlePromises (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:694:18)",
+    "timestamp": "20-04-2019 16:33:41"
+}
+{
+    "level": "error",
+    "timestamp": "20-04-2019 16:33:41"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:35:02"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:35:07"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:35:07"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:35:07"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:35:07"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:35:07"
+}
+{
+    "method": "GET",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:35:07"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCan't set headers after they are sent.",
+    "stack": "Error: Can't set headers after they are sent.\n    at validateHeader (_http_outgoing.js:489:11)\n    at ServerResponse.setHeader (_http_outgoing.js:496:3)\n    at ServerResponse.header (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/response.js:767:10)\n    at ServerResponse.send (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/response.js:170:12)\n    at ServerResponse.json (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/response.js:267:15)\n    at Object.ok (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/index.js:74:32)\n    at done (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:93:25)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:82:55)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:473:16\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5329:29)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at parseTableInformation (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:82:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:82:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16",
+    "timestamp": "20-04-2019 16:35:07"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCallback was already called.",
+    "stack": "Error: Callback was already called.\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:966:32\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:86:36)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:473:16\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5329:29)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at parseTableInformation (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:82:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:82:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at sheetdb.raw.then (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:49:32)\n    at tryCatcher (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:512:31)\n    at Promise._settlePromise (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:569:18)\n    at Promise._settlePromise0 (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:614:10)\n    at Promise._settlePromises (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:694:18)",
+    "timestamp": "20-04-2019 16:35:07"
+}
+{
+    "level": "error",
+    "timestamp": "20-04-2019 16:35:07"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:35:24"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:35:25"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:35:25"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:35:25"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:35:25"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:35:25"
+}
+{
+    "method": "GET",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:35:25"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCan't set headers after they are sent.",
+    "stack": "Error: Can't set headers after they are sent.\n    at validateHeader (_http_outgoing.js:489:11)\n    at ServerResponse.setHeader (_http_outgoing.js:496:3)\n    at ServerResponse.header (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/response.js:767:10)\n    at ServerResponse.send (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/response.js:170:12)\n    at ServerResponse.json (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/response.js:267:15)\n    at Object.ok (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/index.js:74:32)\n    at done (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:92:25)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:82:55)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:473:16\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5329:29)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at parseTableInformation (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:81:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:82:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16",
+    "timestamp": "20-04-2019 16:35:25"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCallback was already called.",
+    "stack": "Error: Callback was already called.\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:966:32\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:86:36)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:473:16\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5329:29)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at parseTableInformation (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:81:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:82:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at sheetdb.raw.then (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:48:32)\n    at tryCatcher (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:512:31)\n    at Promise._settlePromise (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:569:18)\n    at Promise._settlePromise0 (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:614:10)\n    at Promise._settlePromises (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:694:18)",
+    "timestamp": "20-04-2019 16:35:25"
+}
+{
+    "level": "error",
+    "timestamp": "20-04-2019 16:35:25"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:36:43"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:36:44"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:36:44"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:36:44"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:36:44"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:36:44"
+}
+{
+    "method": "GET",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:36:44"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCan't set headers after they are sent.",
+    "stack": "Error: Can't set headers after they are sent.\n    at validateHeader (_http_outgoing.js:489:11)\n    at ServerResponse.setHeader (_http_outgoing.js:496:3)\n    at ServerResponse.header (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/response.js:767:10)\n    at ServerResponse.send (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/response.js:170:12)\n    at ServerResponse.json (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/response.js:267:15)\n    at Object.ok (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/index.js:74:32)\n    at done (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:92:25)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:82:55)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:473:16\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5329:29)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at parseTableInformation (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:81:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:82:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16",
+    "timestamp": "20-04-2019 16:36:44"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCallback was already called.",
+    "stack": "Error: Callback was already called.\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:966:32\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:86:36)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:473:16\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5329:29)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at parseTableInformation (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:81:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:82:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at sheetdb.raw.then (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:48:32)\n    at tryCatcher (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:512:31)\n    at Promise._settlePromise (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:569:18)\n    at Promise._settlePromise0 (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:614:10)\n    at Promise._settlePromises (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:694:18)",
+    "timestamp": "20-04-2019 16:36:44"
+}
+{
+    "level": "error",
+    "timestamp": "20-04-2019 16:36:44"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:41:27"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:41:35"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:41:35"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:41:35"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:41:35"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:41:35"
+}
+{
+    "method": "GET",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:41:35"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCan't set headers after they are sent.",
+    "stack": "Error: Can't set headers after they are sent.\n    at validateHeader (_http_outgoing.js:489:11)\n    at ServerResponse.setHeader (_http_outgoing.js:496:3)\n    at ServerResponse.header (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/response.js:767:10)\n    at ServerResponse.send (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/response.js:170:12)\n    at ServerResponse.json (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/express/lib/response.js:267:15)\n    at Object.error (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/index.js:50:33)\n    at done (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:112:37)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at async.waterfall.args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:105:32)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:473:16\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5329:29)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at parseTableInformation (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:81:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:82:55)",
+    "timestamp": "20-04-2019 16:41:35"
+}
+{
+    "level": "error",
+    "timestamp": "20-04-2019 16:41:35"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:45:52"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:45:53"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:45:53"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:45:53"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:45:53"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:45:53"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:48:24"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:48:36"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:48:38"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:48:38"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:48:38"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:48:38"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:48:39"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorloggerOptions is not defined",
+    "stack": "ReferenceError: loggerOptions is not defined\n    at done (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:112:21)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at async.waterfall.args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:104:32)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:473:16\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5329:29)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at parseTableInformation (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:81:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:82:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at sheetdb.raw.then (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/all.js:48:32)\n    at tryCatcher (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:512:31)",
+    "timestamp": "20-04-2019 16:48:39"
+}
+{
+    "level": "error",
+    "timestamp": "20-04-2019 16:48:39"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:49:12"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:49:14"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:49:14"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:49:14"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:49:14"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:49:14"
+}
+{
+    "method": "GET",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:49:14"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:51:23"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:51:24"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:51:24"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:51:24"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:51:24"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:51:24"
+}
+{
+    "method": "GET",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:51:24"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:51:41"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:51:42"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:51:42"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:51:42"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:51:42"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:51:42"
+}
+{
+    "method": "GET",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:51:42"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:52:27"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:52:27"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:52:27"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:52:27"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:52:27"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:52:27"
+}
+{
+    "method": "GET",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:52:27"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:52:59"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:52:59"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:52:59"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:52:59"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:52:59"
+}
+{
+    "method": "GET",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:52:59"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:53:21"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:53:22"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:53:22"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:53:22"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:53:22"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:53:22"
+}
+{
+    "method": "GET",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:53:22"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:53:34"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:53:37"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:53:37"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:53:37"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:53:37"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:53:37"
+}
+{
+    "method": "GET",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:53:37"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 16:54:1313"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:54:1616"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:54:1616"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:54:1616"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:54:1616"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:54:1616"
+}
+{
+    "method": "GET",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:54:1616"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 16:54:3636"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:54:3636"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:54:3737"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:54:3737"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:54:3737"
+}
+{
+    "method": "GET",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 16:54:3737"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 16:56:4343"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:56:4343"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCannot read property 'database' of undefined",
+    "stack": "TypeError: Cannot read property 'database' of undefined\n    at module.exports (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/body-checker/index.js:27:36)\n    at checkBody (/Users/inumidunamao/projects/freelenace/tab-back/src/services/connect/controllers/connect.js:17:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:82:55)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:66:19\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at Object.waterfall (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5334:5)\n    at createController (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:101:23)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at unfoldWaterfall (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:94:24)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at initWaterfall (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:63:28)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:66:19",
+    "timestamp": "20-04-2019 16:56:4343"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 16:58:5757"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 16:58:5757"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCannot read property 'database' of undefined",
+    "stack": "TypeError: Cannot read property 'database' of undefined\n    at module.exports (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/body-checker/index.js:27:36)\n    at checkBody (/Users/inumidunamao/projects/freelenace/tab-back/src/services/connect/controllers/connect.js:17:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:82:55)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:66:19\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at Object.waterfall (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5334:5)\n    at createController (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:101:23)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at unfoldWaterfall (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:94:24)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at initWaterfall (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:63:28)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:66:19",
+    "timestamp": "20-04-2019 16:58:5757"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 17:00:2727"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 17:00:2828"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:00:2828"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:00:2828"
+}
+{
+    "code": "23505",
+    "level": "error",
+    "message": "insert into \"tessellation_connections\" (\"client\", \"connection\", \"connection_id\", \"created_by\") values ($1, $2, $3, $4) - duplicate key value violates unique constraint \"tessellation_connections_connection_id_unique\"",
+    "timestamp": "20-04-2019 17:00:2828"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 17:01:1717"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 17:01:2121"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:01:2121"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:01:2121"
+}
+{
+    "code": "23505",
+    "level": "error",
+    "message": "insert into \"tessellation_connections\" (\"client\", \"connection\", \"connection_id\", \"created_by\") values ($1, $2, $3, $4) - duplicate key value violates unique constraint \"tessellation_connections_connection_id_unique\"",
+    "timestamp": "20-04-2019 17:01:2121"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 17:02:3535"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 17:02:3636"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:02:3636"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:02:3636"
+}
+{
+    "code": "23505",
+    "level": "error",
+    "message": "insert into \"tessellation_connections\" (\"client\", \"connection\", \"connection_id\", \"created_by\") values ($1, $2, $3, $4) - duplicate key value violates unique constraint \"tessellation_connections_connection_id_unique\"",
+    "timestamp": "20-04-2019 17:02:3636"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 17:04:1616"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 17:04:1717"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:04:1717"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:04:1717"
+}
+{
+    "code": "23505",
+    "level": "error",
+    "message": "insert into \"tessellation_connections\" (\"client\", \"connection\", \"connection_id\", \"created_by\") values ($1, $2, $3, $4) - duplicate key value violates unique constraint \"tessellation_connections_connection_id_unique\"",
+    "timestamp": "20-04-2019 17:04:1717"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 17:05:4444"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 17:05:5757"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 17:06:0101"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:06:0101"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:06:0101"
+}
+{
+    "code": "23505",
+    "level": "error",
+    "message": "insert into \"tessellation_connections\" (\"client\", \"connection\", \"connection_id\", \"created_by\") values ($1, $2, $3, $4) - duplicate key value violates unique constraint \"tessellation_connections_connection_id_unique\"",
+    "timestamp": "20-04-2019 17:06:0101"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 17:06:4949"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 17:06:5050"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:06:5050"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:06:5050"
+}
+{
+    "code": "23505",
+    "level": "error",
+    "message": "insert into \"tessellation_connections\" (\"client\", \"connection\", \"connection_id\", \"created_by\") values ($1, $2, $3, $4) - duplicate key value violates unique constraint \"tessellation_connections_connection_id_unique\"",
+    "timestamp": "20-04-2019 17:06:5050"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 17:08:3434"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 17:08:3939"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:08:3939"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:08:3939"
+}
+{
+    "code": "23505",
+    "level": "error",
+    "message": "insert into \"tessellation_connections\" (\"client\", \"connection\", \"connection_id\", \"created_by\") values ($1, $2, $3, $4) - duplicate key value violates unique constraint \"tessellation_connections_connection_id_unique\"",
+    "timestamp": "20-04-2019 17:08:3939"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 17:09:0606"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:09:0606"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:09:0606"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 17:09:4040"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:09:4040"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:09:4040"
+}
+{
+    "code": "23505",
+    "level": "error",
+    "message": "insert into \"tessellation_connections\" (\"client\", \"connection\", \"connection_id\", \"created_by\") values ($1, $2, $3, $4) - duplicate key value violates unique constraint \"tessellation_connections_connection_id_unique\"",
+    "timestamp": "20-04-2019 17:09:4040"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 17:09:4444"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 17:09:4545"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:09:4545"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:09:4545"
+}
+{
+    "code": "23505",
+    "level": "error",
+    "message": "insert into \"tessellation_connections\" (\"client\", \"connection\", \"connection_id\", \"created_by\") values ($1, $2, $3, $4) - duplicate key value violates unique constraint \"tessellation_connections_connection_id_unique\"",
+    "timestamp": "20-04-2019 17:09:4545"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 17:11:4343"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 17:11:4444"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:11:4444"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:11:4444"
+}
+{
+    "code": "23505",
+    "level": "error",
+    "message": "insert into \"tessellation_connections\" (\"client\", \"connection\", \"connection_id\", \"created_by\") values ($1, $2, $3, $4) - duplicate key value violates unique constraint \"tessellation_connections_connection_id_unique\"",
+    "timestamp": "20-04-2019 17:11:4444"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 17:12:4747"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 17:12:4848"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:12:4848"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:12:4848"
+}
+{
+    "code": "23505",
+    "level": "error",
+    "message": "insert into \"tessellation_connections\" (\"client\", \"connection\", \"connection_id\", \"created_by\") values ($1, $2, $3, $4) - duplicate key value violates unique constraint \"tessellation_connections_connection_id_unique\"",
+    "timestamp": "20-04-2019 17:12:4848"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:12:4848"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 17:12:5656"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:12:5656"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:12:5656"
+}
+{
+    "code": "23505",
+    "level": "error",
+    "message": "insert into \"tessellation_connections\" (\"client\", \"connection\", \"connection_id\", \"created_by\") values ($1, $2, $3, $4) - duplicate key value violates unique constraint \"tessellation_connections_connection_id_unique\"",
+    "timestamp": "20-04-2019 17:12:5656"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:12:5656"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 17:12:5959"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:12:5959"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:12:5959"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:12:5959"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 17:14:2929"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:14:2929"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:14:2929"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:14:2929"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:14:2929"
+}
+{
+    "method": "GET",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:14:2929"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 17:21:5454"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:21:5454"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCannot read property 'name' of undefined",
+    "stack": "TypeError: Cannot read property 'name' of undefined\n    at module.exports (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/body-checker/index.js:27:36)\n    at checkBody (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/create.js:32:12)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:82:55)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:66:19\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at Object.waterfall (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5334:5)\n    at createController (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:105:23)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at unfoldWaterfall (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:94:24)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at sheetdb.raw.then.args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:52:29)\n    at tryCatcher (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/util.js:16:23)",
+    "timestamp": "20-04-2019 17:21:5454"
+}
+{
+    "level": "error",
+    "message": "Callback was already called.",
+    "timestamp": "20-04-2019 17:21:5454"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 17:22:0707"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 17:22:0707"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:22:0707"
+}
+{
+    "method": "POST",
+    "name": "validateTableName",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:22:0707"
+}
+{
+    "method": "POST",
+    "name": "validateColumns",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:22:0707"
+}
+{
+    "method": "POST",
+    "name": "formatColumn",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:22:0707"
+}
+{
+    "method": "POST",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:22:0707"
+}
+{
+    "method": "POST",
+    "name": "generateQuery",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:22:0707"
+}
+{
+    "method": "POST",
+    "name": "createTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:22:0707"
+}
+{
+    "sql": "create table `blogpost` (`id` int unsigned not null auto_increment primary key, `title` varchar(255), `author` int, `content` text, `poster` varchar(255), `rating` float(8, 2), `tessellation_id` bigint, `tessellation_created_by` varchar(255))",
+    "bindings": [],
+    "level": "info",
+    "message": "Running query",
+    "timestamp": "20-04-2019 17:22:0707"
+}
+{
+    "sql": "alter table `blogpost` add unique `blogpost_title_unique`(`title`)",
+    "bindings": [],
+    "level": "info",
+    "message": "Running query",
+    "timestamp": "20-04-2019 17:22:0707"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:22:0808"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table/blogpost",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 17:22:2727"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table/blogpost",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:22:2727"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCannot read property 'name' of undefined",
+    "stack": "TypeError: Cannot read property 'name' of undefined\n    at findTable (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/one.js:7:51)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:84:55)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:66:19\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at Object.waterfall (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5334:5)\n    at createController (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:103:23)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at unfoldWaterfall (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:96:24)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at sheetdb.raw.then.args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:54:29)\n    at tryCatcher (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:512:31)",
+    "timestamp": "20-04-2019 17:22:2727"
+}
+{
+    "level": "error",
+    "message": "Callback was already called.",
+    "timestamp": "20-04-2019 17:22:2727"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 17:25:4141"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:25:4141"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCannot read property 'rows' of undefined",
+    "stack": "TypeError: Cannot read property 'rows' of undefined\n    at module.exports (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/body-checker/index.js:27:36)\n    at checkBody (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/createRecord.js:13:5)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:84:55)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:66:19\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at Object.waterfall (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5334:5)\n    at createController (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:103:23)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at unfoldWaterfall (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:96:24)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at sheetdb.raw.then.args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:54:29)\n    at tryCatcher (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/util.js:16:23)",
+    "timestamp": "20-04-2019 17:25:4141"
+}
+{
+    "level": "error",
+    "message": "Callback was already called.",
+    "timestamp": "20-04-2019 17:25:4141"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 17:25:4848"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 17:25:4848"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:25:4848"
+}
+{
+    "method": "POST",
+    "name": "findTable",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:25:4848"
+}
+{
+    "method": "POST",
+    "name": "getColumnInfo",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:25:4848"
+}
+{
+    "method": "POST",
+    "name": "createRecords",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:25:4848"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:25:4848"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 17:25:5656"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:25:5656"
+}
+{
+    "method": "POST",
+    "name": "findTable",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:25:5656"
+}
+{
+    "method": "POST",
+    "name": "getColumnInfo",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:25:5656"
+}
+{
+    "method": "POST",
+    "name": "createRecords",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:25:5656"
+}
+{
+    "code": "ER_DUP_ENTRY",
+    "level": "error",
+    "message": "insert into `blog_suses` (`password`, `tessellation_created_by`, `username`) values ('someone', 'nsknkcsncndnkdn', 'someting') - ER_DUP_ENTRY: Duplicate entry 'someting' for key 'blog_suses_username_unique'",
+    "timestamp": "20-04-2019 17:25:5656"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:25:5656"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "20-04-2019 17:26:0808"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:26:0808"
+}
+{
+    "method": "POST",
+    "name": "findTable",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:26:0808"
+}
+{
+    "method": "POST",
+    "name": "getColumnInfo",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:26:0808"
+}
+{
+    "method": "POST",
+    "name": "createRecords",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:26:0808"
+}
+{
+    "code": "ER_DUP_ENTRY",
+    "level": "error",
+    "message": "insert into `blog_suses` (`password`, `tessellation_created_by`, `username`) values ('someone', 'nsknkcsncndnkdn', 'sometinee2g') - ER_DUP_ENTRY: Duplicate entry 'sometinee2g' for key 'blog_suses_username_unique'",
+    "timestamp": "20-04-2019 17:26:0808"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:26:0808"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 17:33:1010"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table/blog_suses?limit=20",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 17:33:2222"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table/blog_suses?limit=20",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:33:2222"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table/blog_suses?limit=20",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:33:2222"
+}
+{
+    "method": "GET",
+    "name": "fetchColumnInfo",
+    "url": "/api/v1/table/blog_suses?limit=20",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:33:2222"
+}
+{
+    "method": "GET",
+    "name": "done",
+    "url": "/api/v1/table/blog_suses?limit=20",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:33:2222"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 17:34:3636"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table/blog_suses?limit=20",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 17:34:3737"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table/blog_suses?limit=20",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:34:3737"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table/blog_suses?limit=20",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:34:3737"
+}
+{
+    "method": "GET",
+    "name": "fetchColumnInfo",
+    "url": "/api/v1/table/blog_suses?limit=20",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:34:3737"
+}
+{
+    "method": "GET",
+    "name": "parseTableColumn",
+    "url": "/api/v1/table/blog_suses?limit=20",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:34:3737"
+}
+{
+    "method": "GET",
+    "name": "fetchTableTows",
+    "url": "/api/v1/table/blog_suses?limit=20",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:34:3737"
+}
+{
+    "method": "GET",
+    "name": "done",
+    "url": "/api/v1/table/blog_suses?limit=20",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:34:3737"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table/blog_suses?limit=20",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "20-04-2019 17:39:0303"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table/blog_suses?limit=20",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:39:0303"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table/blog_suses?limit=20",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:39:0303"
+}
+{
+    "method": "GET",
+    "name": "fetchColumnInfo",
+    "url": "/api/v1/table/blog_suses?limit=20",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:39:0303"
+}
+{
+    "method": "GET",
+    "name": "parseTableColumn",
+    "url": "/api/v1/table/blog_suses?limit=20",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:39:0303"
+}
+{
+    "method": "GET",
+    "name": "fetchTableTows",
+    "url": "/api/v1/table/blog_suses?limit=20",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:39:0303"
+}
+{
+    "method": "GET",
+    "name": "done",
+    "url": "/api/v1/table/blog_suses?limit=20",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:39:0303"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 17:39:0909"
+}
+{
+    "method": "PUT",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "START: [PUT]",
+    "timestamp": "20-04-2019 17:39:1616"
+}
+{
+    "method": "PUT",
+    "name": "checkBody",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:39:1616"
+}
+{
+    "method": "PUT",
+    "name": "findTable",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:39:1616"
+}
+{
+    "method": "PUT",
+    "name": "updateRecords",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:39:1616"
+}
+{
+    "level": "error",
+    "message": "Controller Level errorCannot read property 'uuid' of undefined",
+    "stack": "TypeError: Cannot read property 'uuid' of undefined\n    at /Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/updateRecord.js:77:100\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/apply.js:11:19\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/waterfall.js:16:14)\n    at exports.default (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/waterfall.js:26:5)\n    at updateRecords (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/updateRecord.js:101:5)\n    at args (/Users/inumidunamao/projects/freelenace/tab-back/src/utils/controller.js:84:55)\n    at nextTask (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5324:14)\n    at next (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:5331:9)\n    at /Users/inumidunamao/projects/freelenace/tab-back/node_modules/async/dist/async.js:969:16\n    at sheetdb.raw.then (/Users/inumidunamao/projects/freelenace/tab-back/src/services/table/controllers/updateRecord.js:62:20)\n    at tryCatcher (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:512:31)\n    at Promise._settlePromise (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:569:18)\n    at Promise._settlePromise0 (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:614:10)\n    at Promise._settlePromises (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/promise.js:694:18)\n    at _drainQueueStep (/Users/inumidunamao/projects/freelenace/tab-back/node_modules/bluebird/js/release/async.js:138:12)",
+    "timestamp": "20-04-2019 17:39:1616"
+}
+{
+    "level": "error",
+    "message": "Callback was already called.",
+    "timestamp": "20-04-2019 17:39:1616"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 17:40:1010"
+}
+{
+    "method": "PUT",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "START: [PUT]",
+    "timestamp": "20-04-2019 17:40:1010"
+}
+{
+    "method": "PUT",
+    "name": "checkBody",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:40:1010"
+}
+{
+    "method": "PUT",
+    "name": "findTable",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:40:1010"
+}
+{
+    "method": "PUT",
+    "name": "updateRecords",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:40:1111"
+}
+{
+    "method": "PUT",
+    "name": "done",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:40:1111"
+}
+{
+    "method": "PUT",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "START: [PUT]",
+    "timestamp": "20-04-2019 17:40:1616"
+}
+{
+    "method": "PUT",
+    "name": "checkBody",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:40:1616"
+}
+{
+    "method": "PUT",
+    "name": "findTable",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:40:1616"
+}
+{
+    "method": "PUT",
+    "name": "updateRecords",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:40:1616"
+}
+{
+    "method": "PUT",
+    "name": "done",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:40:1616"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 17:40:4747"
+}
+{
+    "method": "PUT",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "START: [PUT]",
+    "timestamp": "20-04-2019 17:40:4949"
+}
+{
+    "method": "PUT",
+    "name": "checkBody",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:40:4949"
+}
+{
+    "method": "PUT",
+    "name": "findTable",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:40:4949"
+}
+{
+    "method": "PUT",
+    "name": "updateRecords",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:40:4949"
+}
+{
+    "method": "PUT",
+    "name": "done",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:40:4949"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 17:45:1111"
+}
+{
+    "method": "PUT",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "START: [PUT]",
+    "timestamp": "20-04-2019 17:45:1212"
+}
+{
+    "method": "PUT",
+    "name": "checkBody",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:45:1212"
+}
+{
+    "method": "PUT",
+    "name": "findTable",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:45:1212"
+}
+{
+    "method": "PUT",
+    "name": "updateRecords",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:45:1212"
+}
+{
+    "level": "error",
+    "message": "Cannot read property 'sheetdb' of undefined",
+    "timestamp": "20-04-2019 17:45:1212"
+}
+{
+    "level": "error",
+    "message": "Callback was already called.",
+    "timestamp": "20-04-2019 17:45:1212"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 17:45:5151"
+}
+{
+    "method": "PUT",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "START: [PUT]",
+    "timestamp": "20-04-2019 17:45:5252"
+}
+{
+    "method": "PUT",
+    "name": "checkBody",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:45:5252"
+}
+{
+    "method": "PUT",
+    "name": "findTable",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:45:5252"
+}
+{
+    "method": "PUT",
+    "name": "updateRecords",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:45:5252"
+}
+{
+    "method": "PUT",
+    "name": "done",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:45:5252"
+}
+{
+    "message": "destroying connection to data source",
+    "level": "info",
+    "timestamp": "20-04-2019 17:45:5252"
+}
+{
+    "level": "error",
+    "message": "sheetdb is not defined",
+    "timestamp": "20-04-2019 17:45:5252"
+}
+{
+    "level": "error",
+    "message": "Callback was already called.",
+    "timestamp": "20-04-2019 17:45:5252"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 17:46:2222"
+}
+{
+    "method": "PUT",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "START: [PUT]",
+    "timestamp": "20-04-2019 17:46:2323"
+}
+{
+    "method": "PUT",
+    "name": "checkBody",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:46:2323"
+}
+{
+    "method": "PUT",
+    "name": "findTable",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:46:2323"
+}
+{
+    "method": "PUT",
+    "name": "updateRecords",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:46:2323"
+}
+{
+    "method": "PUT",
+    "name": "done",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:46:2424"
+}
+{
+    "message": "destroying connection to data source",
+    "level": "info",
+    "timestamp": "20-04-2019 17:46:2424"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "20-04-2019 17:46:5858"
+}
+{
+    "method": "PUT",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "START: [PUT]",
+    "timestamp": "20-04-2019 17:47:0101"
+}
+{
+    "method": "PUT",
+    "name": "checkBody",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:47:0101"
+}
+{
+    "method": "PUT",
+    "name": "findTable",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "20-04-2019 17:47:0101"
+}
+{
+    "method": "PUT",
+    "name": "updateRecords",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:47:0101"
+}
+{
+    "method": "PUT",
+    "name": "done",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "20-04-2019 17:47:0101"
+}
+{
+    "message": "destroying connection to data source",
+    "level": "info",
+    "timestamp": "20-04-2019 17:47:0101"
+}

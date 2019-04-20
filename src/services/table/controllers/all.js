@@ -3,64 +3,65 @@ const {create} = require('../../../utils/controller');
 const logger = require('../../../utils/logger');
 
 
-function findTable (req, res, {db}, callback) {
+function findTable ({sheetdb, res}, callback) {
     const data = {};
     const query = `SHOW TABLES`;
 
-    return db.query(query, (err, result) => {
-        if (err) {
-            logger.err(err, err.message);
+    return sheetdb.raw(query)
+        .then((result) => {
+            data.result = result[0];
+            callback(null, data);
+            return result;
+        })
+        .catch((error) => {
+            logger.err(error);
             return callback({
                 code: 501,
-                message: 'Table could not be created at this time'
+                message: 'Could not query tables at this time',
             }, res);
-        }
-
-        data.result = result;
-
-        return callback(null, res, db, data);
-    });
+        });
 }
 
-function formatResult (res, db, data, callback) {
+function formatResult (data, callback) {
     data.tableNames = data.result.map((table) => {
         return Object.values(table)[0];
     });
 
-    return callback(null, res, db, data);
+    return callback(null, data);
 }
 
-function fetchTableInfo (res, db, data, callback) {
+function fetchTableInfo (data, callback, {res, sheetdb}) {
     data.tables = [];
 
     if (data.tableNames.length) {
         data.tableNames.forEach((tableName, index) => {
             const query =`SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME='${tableName}'`;
-            db.query(query, (err, result) => {
-                if (err) {
-                    logger.error(err.message, err);
+            return sheetdb.raw(query)
+                .then((result) => {
+                    data.tables.push(result[0]);
+        
+                    if (index === data.tableNames.length - 1) {
+                        data.tables = data.tables.filter((table) => {
+                            return table.filter((column) => column.COLUMN_NAME === 'tessellation_id').length;
+                        });
+
+                        return callback(null, data);
+                    }
+                })
+                .catch((error) => {
+                    logger.error(error);
                     return callback({
                         code: 501,
                         message: 'Cannot get all tables at this time'
                     }, res);
-                }
-                data.tables.push(result);
-        
-                if (index === data.tableNames.length - 1) {
-                    data.tables = data.tables.filter((table) => {
-                        return table.filter((column) => column.COLUMN_NAME === 'tessellation_id').length;
-                    });
-
-                    return callback(null, res, data);
-                }
-            });
+                });
         });
     } else {
-        return callback(null, res, data);
+        return callback(null, data);
     }
 }
 
-function parseTableInformation (res, data, callback) {
+function parseTableInformation (data, callback, {res}) {
     data.tables = data.tables
         .map((table) => {
             return {
@@ -77,11 +78,11 @@ function parseTableInformation (res, data, callback) {
             }
         });
     
-    return callback(null, res, { tables: data.tables });
+    return callback(null, { tables: data.tables });
 }
 
 
-function done(error, res, data) {
+function done(error, data, {res}) {
     if (error) {
         if (response[error.code]) {
             return response[error.code](res, error);
@@ -97,5 +98,5 @@ module.exports = create([
     formatResult,
     fetchTableInfo,
     parseTableInformation,
-    done
+    // done
 ]);

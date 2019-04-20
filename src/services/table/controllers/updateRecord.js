@@ -7,7 +7,7 @@ const logger = require('../../../utils/logger');
 const {formatKnexError} = require('../../../utils/error');
 
 
-function checkBody (req, res, {db}, callback) {
+function checkBody ({req}, callback) {
     const data = {};
 
     check(req.body, {
@@ -23,11 +23,11 @@ function checkBody (req, res, {db}, callback) {
             return callback({
                 code: 400,
                 message: err.message
-            }, res);
+            });
         }
 
         if (!Array.isArray(body.rows)) {
-            return callback({ code: 400, message: 'Invalid row input' }, res);
+            return callback({ code: 400, message: 'Invalid row input' });
         } else {
             const invalidTessellationId = !body.rows.every((row) => {
                 return !!row.tessellation_id;
@@ -37,51 +37,58 @@ function checkBody (req, res, {db}, callback) {
                 return callback({
                     code: 400,
                     message: 'tessellation_id is required in field',
-                }, res);
+                });
             }
         }
+
+        data.auth = req.auth;
+        data.isAdmin = req.isAdmin;
         data.rows = body.rows;
         data.tableName = req.params.name;
-        return callback(null, res, db, data);
+        return callback(null, data);
     });
 }
 
-function findTable (res, db, data, callback) {
+function findTable (data, callback, {sheetdb}) {
     const query =`SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME='${data.tableName}'`;
-    return db.query(query, (err, result) => {
-        if (err) {
-            logger.err(err);
+
+    return sheetdb
+        .raw(query)
+        .then((result) => {
+            if (!result[0].length) {
+                return ({
+                    code: 404,
+                    message: `Table ${data.tableName} not found in database`
+                }, res);
+            }
+            data.table = result[0];
+            callback(null, data);
+            return result;
+        })
+        .catch((error) => {
+            logger.err(error);
             return callback({
                 code: 501,
-                message: 'Cannot get all tables at this time'
-            }, res);
-        }
-
-        if (!result.length) {
-            return ({
-                code: 404,
-                message: `Table ${data.tableName} not found in database`
-            }, res);
-        }
-        data.table = result;
-        return callback(null, res, data);
-    });
+                message: 'Cannot get table information at this time',
+            });
+        });
 }
 
-function updateRecords(res, data, callback, {knex}) {
+function updateRecords(data, callback, {sheetdb}) {
     const ops = data.rows.map((row) => (result, callback2) => {
         const {tessellation_id, ...rest} = row;
-        return knex(data.tableName)
+        return sheetdb(data.tableName)
             .where({tessellation_id, tessellation_created_by: data.isAdmin ? undefined : data.auth.uuid})
             .update(rest)
             .then(() => {
                 // TODO: Cache this
-                return knex(data.tableName)
+                return sheetdb(data.tableName)
                     .select('*')
                     .where({tessellation_id})
                     .then(([values]) => {
                         result.push(values);
-                        return callback2(null, result);
+                        callback2(null, result);
+                        return result;
                     })
                     .catch((error) => {
                         logger.err(error);
@@ -104,23 +111,13 @@ function updateRecords(res, data, callback, {knex}) {
                     error,
                     'Records could not be updated at this time'
                 ),
-            }, res);
+            });
         }
 
-        return callback(null, res, { rows: result });
+        return callback(null, { rows: result });
     });
 }
 
-function done(error, res, data) {
-    if (error) {
-        if (response[error.code]) {
-            return response[error.code](res, error);
-        }
-        return response.error(res, error);
-    } else {
-        return response.ok(res, data);
-    }
-}
 
 module.exports = create([
     checkBody,
@@ -129,5 +126,5 @@ module.exports = create([
     // validateFields,
     // findDuplicates,
     updateRecords,
-    done,
+    // done,
 ]);

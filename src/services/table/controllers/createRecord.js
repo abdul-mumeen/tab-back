@@ -7,7 +7,7 @@ const logger = require('../../../utils/logger');
 const {formatKnexError} = require('../../../utils/error');
 
 
-function checkBody (req, res, {db}, callback) {
+function checkBody ({req}, callback) {
     const data = {};
 
     check(req.body, {
@@ -20,55 +20,55 @@ function checkBody (req, res, {db}, callback) {
             return callback({
                 code: 400,
                 message: err.message
-            }, res);
+            });
         }
 
         if (!Array.isArray(body.rows)) {
-            return callback({ code: 400, message: 'Invalid row input' }, res);
+            return callback({ code: 400, message: 'Invalid row input' });
         }
         data.rows = body.rows;
         data.tableName = req.params.name;
         data.auth = req.auth;
         data.isAdmin = req.isAdmin;
-        return callback(null, res, data);
+        return callback(null, data);
     });
 }
 
-function findTable (res, data, callback, {knex}) {
-    knex.schema.hasTable(data.tableName)
+function findTable (data, callback, {sheetdb}) {
+    sheetdb.schema.hasTable(data.tableName)
         .then((exists) => {
             if (!exists) {
                 return ({
                     code: 404,
                     message: `Table ${data.tableName} not found in database`
-                }, res);
+                });
             }
 
             data.table = data.tableName;
-            return callback(null, res, data);
+            return callback(null, data);
         })
         .catch((error) => {
             logger.err(error);
             return callback({
                 code: 501,
                 message: 'Cannot get table at this time'
-            }, res);
+            });
         });
 }
 
-function getColumnInfo (res, data, callback, {knex}) {
-    return knex(data.tableName)
+function getColumnInfo (data, callback, {sheetdb}) {
+    return sheetdb(data.tableName)
         .columnInfo()
         .then((info) => {
             data.columns = info;
-            return callback(null, res, data); 
+            return callback(null, data); 
         });
 }
 
-function createRecords(res, data, callback, {knex}) {
+function createRecords(data, callback, {sheetdb}) {
     const ops = data.rows.map((row) => (result, callback2) => {
 
-        return knex(data.tableName)
+        return sheetdb(data.tableName)
             .returning(['id'])
             .insert(Object.assign({}, row, {
                 tessellation_created_by: data.isAdmin
@@ -77,7 +77,7 @@ function createRecords(res, data, callback, {knex}) {
             }))
             .then(([id]) => {
                 // TODO: Cache this
-                return knex(data.tableName)
+                return sheetdb(data.tableName)
                     .select('*')
                     .where({id})
                     .then(([values]) => {
@@ -85,7 +85,7 @@ function createRecords(res, data, callback, {knex}) {
                             if (values.id) {
                                 if (data.columns.id.type === 'int') {
                                     const tessellationData = {tessellation_id: values.id};
-                                    return knex(data.tableName)
+                                    return sheetdb(data.tableName)
                                         .update(tessellationData)
                                         .where({id})
                                         .then(() => {
@@ -124,22 +124,11 @@ function createRecords(res, data, callback, {knex}) {
                     error,
                     'Records could not be added to table at this time'
                 ),
-            }, res);
+            });
         }
 
-        return callback(null, res, { rows: result });
+        return callback(null, { rows: result });
     });
-}
-
-function done(error, res, data) {
-    if (error) {
-        if (response[error.code]) {
-            return response[error.code](res, error);
-        }
-        return response.error(res, error);
-    } else {
-        return response.ok(res, data);
-    }
 }
 
 module.exports = create([
@@ -148,5 +137,5 @@ module.exports = create([
     getColumnInfo,
     // validateFields,
     createRecords,
-    done
+    // done
 ]);

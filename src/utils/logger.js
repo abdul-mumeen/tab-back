@@ -12,7 +12,7 @@ const logger = winston.createLogger({
     format: winston.format.combine(
         winston.format.splat(), // Necessary to produce the 'meta' attribute
         errorStackTracerFormat(),
-        winston.format.timestamp({ format: 'DD-MM-YYYY HH:mm:ss'}),
+        winston.format.timestamp({ format: 'DD-MM-YYYY HH:mm:ssss'}),
         winston.format.json({ space: 4 }),
     ),
     transports: [

@@ -23,6 +23,7 @@ const decodeToken = (req, res, callback) => {
         req.headers.authorization,
         process.env.SECRET,
     );
+
     return callback(null, req, res, user);
 }
 

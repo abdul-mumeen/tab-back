@@ -27,7 +27,7 @@ const {superChain} = require('../../../utils/helper');
         }
     }
 */
-function checkBody (req, res, {db}, callback) {
+function checkBody ({req}, callback) {
     const data = {};
     return check(req.body, {
         name: {
@@ -60,39 +60,39 @@ function checkBody (req, res, {db}, callback) {
         data.fields = body;
         data.auth = req.auth;
         data.isAdmin = req.isAdmin;
-        return callback(null, res, db, data);
+        return callback(null, data);
     });
 }
 
-function validateTableName (res, db, data, callback) {
+function validateTableName (data, callback) {
     if (data.fields.name.length > 50) {
         return callback({
             code: 400,
             message: 'Invalid table name'
-        }, res);
+        });
     }
-    return callback(null, res, db, data);
+    return callback(null, data);
 }
 
-function validateColumns (res, db, data, callback) {
+function validateColumns (data, callback) {
     for (const column of data.fields.columns) {
         if (!column.name) {
             return callback({
                 code: 400,
                 message: 'Column names are required',
-            }, res);
+            });
         } else if (!column.type) {
             return callback({
                 code: 400,
                 message: 'Type of column is not specified',
-            }, res);
+            });
         }
     }
 
-    return callback(null, res, db, data);
+    return callback(null, data);
 }
 
-function formatColumn (res, db, data, callback) {
+function formatColumn (data, callback) {
     const columns = removeKeyColumns(data.fields.columns);
 
     data.fields.columns = columns.map((column) => {
@@ -108,34 +108,33 @@ function formatColumn (res, db, data, callback) {
         );
     });
 
-    return callback(null, res, db, data);
+    return callback(null, data);
 }
 
-function findTable (res, db, data, callback, {knex}) {
-    knex.schema.hasTable(data.fields.name)
+function findTable (data, callback, {sheetdb}) {
+    sheetdb.schema.hasTable(data.fields.name)
         .then((exists) => {
-            console.log(exists);
             if (!exists) {
-                return callback(null, res, db, data);
+                return callback(null, data);
             }
 
             return callback({
                 code: 409,
                 message: 'This table already exists',
-            }, res);
+            });
         })
         .catch((error) => {
             logger.err(error);
             return callback({
                 code: 501,
                 message: 'Table could not be created at this time'
-            }, res);
+            });
         });
 }
 
-function generateQuery (res, db, data, callback, {knex}) {
+function generateQuery (data, callback, {sheetdb}) {
     try {
-        const query = knex.schema.createTable(data.fields.name, function (table) {
+        const query = sheetdb.schema.createTable(data.fields.name, function (table) {
             const primaryKeys = columnPrimaryKeys(data.fields.columns);
             const uniqueKeys = columnUniqueKeys(data.fields.columns);
 
@@ -144,7 +143,7 @@ function generateQuery (res, db, data, callback, {knex}) {
             if (!columnHasId(data.fields.columns)) {
                 if (data.fields.withId) {
                     if (data.fields.useUUID) {
-                        table.uuid('id').unique().defaultTo(knex.raw('uuid_generate_v4()'))
+                        table.uuid('id').unique().defaultTo(sheetdb.raw('uuid_generate_v4()'))
                     } else {
                         table.increments();
                     }
@@ -194,20 +193,20 @@ function generateQuery (res, db, data, callback, {knex}) {
         }).toSQL();
 
         data.queries = query;
-        return callback(null, res, data);
+        return callback(null, data);
     } catch (error) {
         logger.err(error);
         return callback({
             code: 400,
             message: error.message,
-        }, res);
+        });
     }
 }
 
-function createTable (res, data, callback, {knex}) {
+function createTable (data, callback, {sheetdb}) {
     const ops = data.queries.map((query, index) => (callback) => {
         logger.info(`Running query`, query);
-        return knex
+        return sheetdb
             .raw(...Object.values(query))
             .then((...args) => {
                 console.log(...args);
@@ -220,24 +219,24 @@ function createTable (res, data, callback, {knex}) {
 
     waterfall(ops, function (error, result) {
         if (error) {
-            dropTable(knex, data.fields.name);
+            dropTable(sheetdb, data.fields.name);
             logger.err(error);
             return callback({
                 code: 500,
                 message: error.message,
-            }, res);
+            });
         } else {
-            return callback(null, res, result);
+            return callback(null, result);
         }
     });
 }
 
-function dropTable (knex, tableName) {
-    const queries = knex.schema.dropTableIfExists(tableName).toSQL();
+function dropTable (sheetdb, tableName) {
+    const queries = sheetdb.schema.dropTableIfExists(tableName).toSQL();
 
     const ops = queries.map((query) => (callback) => {
         logger.info(`Running query`, query);
-        return knex
+        return sheetdb
             .raw(...Object.values(query))
             .then(() => {
                 callback(null);
@@ -257,17 +256,6 @@ function dropTable (knex, tableName) {
     });
 }
 
-function done(error, res, data) {
-    if (error) {
-        if (response[error.code]) {
-            return response[error.code](res, error);
-        }
-        return response.error(res, error);
-    } else {
-        return response.created(res, data);
-    }
-}
-
 module.exports = create([
     checkBody,
     validateTableName,
@@ -276,5 +264,5 @@ module.exports = create([
     findTable,
     generateQuery,
     createTable,
-    done
+    // done
 ]);

@@ -1,7 +1,7 @@
 const async = require('async');
 const firebase = require('firebase');
 const constants = require('../../constants');
-const {db, knex, response} = require('./index');
+const {db, knex, response, systemdb} = require('./index');
 const logger = require('./logger');
 
 
@@ -23,6 +23,8 @@ const config = {
     messagingSenderId: MESSANGING_SENDER_ID
 };
 
+//TODO: Document this
+
 function create (waterfall) {
     try {
         // Initialize firebase
@@ -30,46 +32,111 @@ function create (waterfall) {
             firebase.initializeApp(config);
         }
 
-        const options = {constants, firebase, db, knex};
     
         // Compose services
         return (req, res) => {
+            const options = {constants, firebase, db, knex, systemdb};
+
             logger.info(`START: [${req.method}]`, {
                 method: req.method,
                 url: req.originalUrl,
             });
-            const unfoldWaterfall = waterfall.map((fn, index) => {
-                const loggerOptions = {
-                    method: req.method,
-                    name: fn.name,
-                    url: req.originalUrl,
-                };
 
-                return (...args) => {
-                    logger.info(
-                        index !== waterfall.length - 1 ? 'Running...' : 'Done!',
-                        loggerOptions
-                    );
+            function initWaterfall (callback) {
+                if (req.sheetConnection) {
+                    const sheetdb = require('knex')({
+                        client: req.sheetConnection.client,
+                        connection: req.sheetConnection.props,
+                    });
 
-                    try {
-                        return fn(...args, options);
-                    } catch (e) {
-                        logger.error(constants.GENERIC_LEVEL_ERROR, e);
-
-                        return response.error(res, {
-                            message: constants.GENERIC_ERROR,
-                        });
-                    }
+                    return sheetdb.raw('select 1+1 as result')
+                        .then((...args) => {
+                            options.sheetdb = sheetdb;
+                            callback(null, options);
+                            return args;
+                        })
+                        .catch((error) => {
+                            logger.err(error)
+                            return callback({
+                                code: 500,
+                                message: 'could not establish connection to datasource',
+                            }, res);
+                        })
+                } else {
+                    return callback(null, options);
                 }
-            });
+            };
+
+            function unfoldWaterfall (options, callback) {
+                const waterfall2 = waterfall.map((fn, index) => {
+                    const loggerOptions = {
+                        method: req.method,
+                        name: fn.name,
+                        url: req.originalUrl,
+                    };
     
-            unfoldWaterfall[0] = async.apply(unfoldWaterfall[0], req, res, options);
+                    return (...args) => {
+                        logger.info(
+                            index !== waterfall.length - 1 ? 'Running...' : 'Done!',
+                            loggerOptions
+                        );
     
-            // Do Async Op
-            async.waterfall(
-                unfoldWaterfall.slice(0, -1),
-                unfoldWaterfall.slice(-1)[0]
-            );
+                        try {
+                            return fn(...args, Object.assign({}, options, {req, res}));
+                        } catch (e) {
+                            logger.error(constants.GENERIC_LEVEL_ERROR, e);
+                            
+                            return callback({
+                                code: 500,
+                                message: constants.GENERIC_ERROR,
+                            });
+                        }
+                    }
+                });
+
+                return callback(null, options, waterfall2);
+            }
+            
+
+            function createController (options, waterfall2, callback) {
+                waterfall2[0] = async.apply(waterfall2[0], Object.assign({}, options, {req, res}));
+    
+                async.waterfall(waterfall2, (error, data) => {
+                    return callback(error, data);
+                });
+            }
+
+            function done (error, data) {
+                logger.info(
+                    'Done!',
+                    {
+                        method: req.method,
+                        name: 'done',
+                        url: req.originalUrl,
+                    }
+                );
+
+                if (options.sheetdb) {
+                    logger.info('destroying connection to data source');
+                    options.sheetdb.destroy();
+                }
+
+                if (error) {
+                    console.log(error)
+                    if (response[error.code]) {
+                        return response[error.code](res, error);
+                    }
+                    return response.error(res, error);
+                } else {
+                    return response.created(res, data);
+                }
+            }
+
+            async.waterfall([
+                async.apply(initWaterfall),
+                unfoldWaterfall,
+                createController,
+            ], done);
         }
     } catch (e) {
         logger.error(e);
