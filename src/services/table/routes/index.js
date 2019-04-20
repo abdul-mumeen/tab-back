@@ -1,13 +1,14 @@
 const {createRoute} = require('../../../utils');
+const allow = require('../../../middlewares/allow');
 
 module.exports = createRoute(
   [
-    ['post', '/', 'create'],
-    ['get', '/', 'all'],
-    ['get', '/:name', 'one'],
-    ['delete', '/:name', 'drop'],
-    ['post', '/:name/records', 'createRecord'],
-    ['put', '/:name/records', 'updateRecord'],
+    ['post', '/', allow('auth'), allow('admin'), 'create'],
+    ['get', '/', allow('auth'), 'all'],
+    ['get', '/:name', allow('auth'), 'one'],
+    ['delete', '/:name', allow('auth'), 'drop'],
+    ['post', '/:name/records', allow('auth'), 'createRecord'],
+    ['put', '/:name/records',allow('auth'), 'updateRecord'],
   ],
   'table'
 );

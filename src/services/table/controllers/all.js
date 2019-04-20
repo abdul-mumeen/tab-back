@@ -1,4 +1,6 @@
-const {createController, response} = require('../../../utils');
+const {response} = require('../../../utils');
+const {create} = require('../../../utils/controller');
+const logger = require('../../../utils/logger');
 
 
 function findTable (req, res, {db}, callback) {
@@ -7,7 +9,7 @@ function findTable (req, res, {db}, callback) {
 
     return db.query(query, (err, result) => {
         if (err) {
-            global.console.error(err);
+            logger.err(err, err.message);
             return callback({
                 code: 501,
                 message: 'Table could not be created at this time'
@@ -36,7 +38,7 @@ function fetchTableInfo (res, db, data, callback) {
             const query =`SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME='${tableName}'`;
             db.query(query, (err, result) => {
                 if (err) {
-                    global.console.error(err);
+                    logger.error(err.message, err);
                     return callback({
                         code: 501,
                         message: 'Cannot get all tables at this time'
@@ -45,6 +47,10 @@ function fetchTableInfo (res, db, data, callback) {
                 data.tables.push(result);
         
                 if (index === data.tableNames.length - 1) {
+                    data.tables = data.tables.filter((table) => {
+                        return table.filter((column) => column.COLUMN_NAME === 'tessellation_id').length;
+                    });
+
                     return callback(null, res, data);
                 }
             });
@@ -86,7 +92,7 @@ function done(error, res, data) {
     }
 }
 
-module.exports = createController([
+module.exports = create([
     findTable,
     formatResult,
     fetchTableInfo,

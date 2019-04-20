@@ -1,5 +1,6 @@
 const {createController, response} = require('../../../utils');
-
+const {create} = require('../../../utils/controller');
+const logger = require('../../../utils/logger');
 
 function findTable (req, res, {db}, callback) {
     const data = {};
@@ -7,7 +8,7 @@ function findTable (req, res, {db}, callback) {
 
     return db.query(query, (err, result) => {
         if (err) {
-            global.console.error(err);
+            logger.err(err);
             return callback({
                 code: 501,
                 message: err.message
@@ -19,8 +20,10 @@ function findTable (req, res, {db}, callback) {
                 message: 'Table does not exist on database'
             }, res);
         }
-        data.limit = req.params.limit || 10;
+        data.limit = req.query.limit || 10;
         data.tableName = Object.values(result[0])[0];
+        data.auth = req.auth;
+        data.isAdmin = req.isAdmin;
         return callback(null, res, db, data);
     });
 }
@@ -29,7 +32,7 @@ function fetchTableInfo (res, db, data, callback) {
     const query =`SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME='${data.tableName}'`;
     db.query(query, (err, result) => {
         if (err) {
-            global.console.error(err);
+            logger.err(err);
             return callback({
                 code: 501,
                 message: 'Cannot get all tables at this time'
@@ -46,10 +49,21 @@ function fetchColumnInfo (res, db, data, callback) {
     const query =`SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME='${data.tableName}'`;
     db.query(query, (err, result) => {
         if (err) {
-            global.console.error(err);
+            logger.err(err);
             return callback({
                 code: 501,
                 message: 'Cannot get all tables at this time'
+            }, res);
+        }
+
+        const tessTable = result.filter((col) => {
+            return col.COLUMN_NAME === 'tessellation_id';
+        });
+
+        if (tessTable.length === 0) {
+            return callback({
+                code: 404,
+                message: 'Table not found'
             }, res);
         }
 
@@ -75,7 +89,11 @@ function parseTableColumn (res, db, data, callback) {
 }
 
 function fetchTableTows (res, db, data, callback) {
-    let query = `SELECT * FROM ${data.tableName} LIMIT ${data.limit}`;
+    let query = `SELECT * FROM ${data.tableName} WHERE tessellation_created_by='${data.auth.uuid}' LIMIT ${data.limit}`;
+    if (data.isAdmin) {
+        query = `SELECT * FROM ${data.tableName} LIMIT ${data.limit}`;
+    }
+
     return db.query(query, (err, result) => {
         if (err) {
             return callback({
@@ -106,7 +124,7 @@ function done(error, res, data) {
     }
 }
 
-module.exports = createController([
+module.exports = create([
     findTable,
     fetchTableInfo,
     fetchColumnInfo,

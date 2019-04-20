@@ -2,6 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const async = require('async');
 const firebase = require('firebase');
+
+const constants = require('../../constants');
 require('dotenv').config();
 
 const mysqlOpts = {
@@ -18,16 +20,11 @@ db.connect(err => {
     if (err) console.error(err);
 });
 
-// const knex = require('knex')({
-//     client: 'mysql',
-//     version: '8',
-//     connection: {
-//         host : '127.0.0.1',
-//         user : 'root',
-//         password : '0987654321',
-//         database : 'tabby'
-//     }
-// });
+const knex = require('knex')({
+    client: 'mysql',
+    connection: mysqlOpts
+});
+
 
 const createRoute = (routes, serviceName) => {
     const controllerPath = path.join(__dirname, `../services/${serviceName}/controllers`);
@@ -135,7 +132,7 @@ const createController = (waterfall) => {
                     );
 
                     try {
-                        fn(...args);
+                        fn(...args, {constants, firebase, db});
                     } catch (e) {
                         global.console.error('CODE ERROR', e);
                         return response.error(res, {
@@ -197,5 +194,7 @@ module.exports = {
     createRoute,
     response,
     createController,
-    listTables
+    listTables,
+    db,
+    knex
 };

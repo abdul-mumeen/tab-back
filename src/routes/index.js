@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const constants = require('../../constants');
 
 const routeHandler = (routes, service, router) => {
     const routeIterator = routes.entries();
@@ -19,10 +20,14 @@ const routesV1 = (app, router) => {
         
     });
     app.use(BASE, router);
-    app.use('*', (req, res) => {
-        return res.sendFile(path.resolve(__dirname, '../../tab-front/dist/ext/index.html'));
-    });
+
+    if (process.env.NODE_ENV === constants.PRODUCTION) {
+        app.use('*', (req, res) => {
+            return res.sendFile(path.resolve(__dirname, '../../tab-front/dist/ext/index.html'));
+        });
+    }
 }
+    
 
 module.exports = {
     routesV1
