@@ -13,6 +13,11 @@ function checkBody ({req}, callback) {
         rows: {
             type: 'array',
             required: true,
+        },
+        truncate: {
+            type: 'boolean',
+            required: false,
+            default: false,
         }
     }, (err, body) => {
         if (err) {
@@ -27,6 +32,7 @@ function checkBody ({req}, callback) {
         }
         data.rows = body.rows;
         data.tableName = req.params.name;
+        data.truncate = body.truncate;
         data.auth = req.auth;
         data.isAdmin = req.isAdmin;
         return callback(null, data);
@@ -44,7 +50,8 @@ function findTable (data, callback, {sheetdb}) {
             }
 
             data.table = data.tableName;
-            return callback(null, data);
+            callback(null, data);
+            return exists;
         })
         .catch((error) => {
             logger.err(error);
@@ -60,7 +67,8 @@ function getColumnInfo (data, callback, {sheetdb}) {
         .columnInfo()
         .then((info) => {
             data.columns = info;
-            return callback(null, data); 
+            callback(null, data);
+            return info; 
         })
         .catch((error) => {
             logger.err(error);
@@ -69,6 +77,29 @@ function getColumnInfo (data, callback, {sheetdb}) {
                 message: 'Cannot get table at this time'
             });
         });
+}
+
+
+function removeRecords (data, callback, {sheetdb}) {
+    if (data.truncate) {
+        return sheetdb(data.tableName) 
+            .delete()
+            .where({tessellation_created_by: data.isAdmin ? 'admin' : data.auth.uuid})
+            .then(() => {
+                callback(null, data);
+                return true;
+            })
+            .catch((error) => {
+                logger.err(error);
+                callback({
+                    code: 500,
+                    message: 'could not remove older records',
+                });
+                return error;
+            });
+    }
+
+    return callback(null, data);
 }
 
 function createRecords(data, callback, {sheetdb}) {
@@ -141,5 +172,6 @@ module.exports = create([
     checkBody,
     findTable,
     getColumnInfo,
+    removeRecords,
     createRecords,
 ]);

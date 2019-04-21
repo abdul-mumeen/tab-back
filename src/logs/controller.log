@@ -13326,3 +13326,241 @@
     "message": "Done!",
     "timestamp": "21-04-2019 14:19:2121"
 }
+{
+    "PORT": "7000",
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "21-04-2019 15:52:1919"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "21-04-2019 15:52:4444"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 15:52:4444"
+}
+{
+    "method": "POST",
+    "name": "findTable",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 15:52:4444"
+}
+{
+    "method": "POST",
+    "name": "getColumnInfo",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 15:52:4444"
+}
+{
+    "method": "POST",
+    "name": "removeRecords",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 15:52:4444"
+}
+{
+    "method": "POST",
+    "name": "createRecords",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 15:52:4444"
+}
+{
+    "code": "ER_DUP_ENTRY",
+    "level": "error",
+    "message": "insert into `blog_suses` (`password`, `tessellation_created_by`, `tessellation_id`, `username`) values ('someone', 'nsknkcsncndnkdn', 21, 'Kurosaki-sama') - ER_DUP_ENTRY: Duplicate entry 'Kurosaki-sama' for key 'blog_suses_username_unique'",
+    "timestamp": "21-04-2019 15:52:4444"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 15:52:4444"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "21-04-2019 15:52:5555"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 15:52:5555"
+}
+{
+    "method": "POST",
+    "name": "findTable",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 15:52:5555"
+}
+{
+    "method": "POST",
+    "name": "getColumnInfo",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 15:52:5656"
+}
+{
+    "method": "POST",
+    "name": "removeRecords",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 15:52:5656"
+}
+{
+    "method": "POST",
+    "name": "createRecords",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 15:52:5656"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 15:52:5656"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "21-04-2019 15:53:5555"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 15:53:5555"
+}
+{
+    "method": "POST",
+    "name": "findTable",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 15:53:5555"
+}
+{
+    "method": "POST",
+    "name": "getColumnInfo",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 15:53:5555"
+}
+{
+    "method": "POST",
+    "name": "removeRecords",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 15:53:5555"
+}
+{
+    "method": "POST",
+    "name": "createRecords",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 15:53:5555"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 15:53:5555"
+}
+{
+    "PORT": "7000",
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "21-04-2019 15:54:0808"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "21-04-2019 15:54:1313"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 15:54:1313"
+}
+{
+    "method": "POST",
+    "name": "findTable",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 15:54:1313"
+}
+{
+    "method": "POST",
+    "name": "getColumnInfo",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 15:54:1313"
+}
+{
+    "method": "POST",
+    "name": "removeRecords",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 15:54:1313"
+}
+{
+    "method": "POST",
+    "name": "createRecords",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 15:54:1313"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/table/blog_suses/records",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 15:54:1414"
+}
