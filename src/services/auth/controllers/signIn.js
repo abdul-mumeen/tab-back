@@ -1,9 +1,9 @@
 const jwt = require('jsonwebtoken');
 const check = require('body-checker');
-const {createController, response} = require('../../../utils');
+const {create} = require('../../../utils/controller');
 
 
-const checkBody = (req, res, firebase, callback) => {
+const checkBody = ({req}, callback) => {
     const data = {};
     return check(req.body, {
         email: {
@@ -16,19 +16,22 @@ const checkBody = (req, res, firebase, callback) => {
         }
     }, (err, body) => {
         if (err) {
-          return callback(true);
+          return callback({
+              code: 400,
+              message: err.message,
+          });
         }
         data.fields = body;
-        return callback(null, res, firebase, data);
+        return callback(null, data);
     });
 }
 
-const authenticate = (res, firebase, data, callback) => {
-    firebase
+const authenticate = (data, callback, {firebase}) => {
+    return firebase
         .auth()
         .signInWithEmailAndPassword(data.fields.email, data.fields.password)
         .then(() => {
-            return callback(null, res, data);
+            return callback(null, data);
         })
         .catch(function(error) {
             if (error) {
@@ -38,14 +41,14 @@ const authenticate = (res, firebase, data, callback) => {
                     code = 'unauthorized';
                     message = 'Invalid email and password combination';
                 }
-                return callback({code, message}, res);
+                return callback({code, message});
             } else {
-                return callback(null, res, data);
+                return callback(null, data);
             }
         });
 }
 
-const generateToken = (res, data, callback) => {
+const generateToken = (data, callback) => {
     const token = jwt.sign({
         email: data.fields.email
     }, process.env.SECRET);
@@ -53,20 +56,8 @@ const generateToken = (res, data, callback) => {
     return callback(null, res, { token });
 }
 
-const done = (error, res, data) => {
-    if (error) {
-        if (response[error.code]) {
-            return response[error.code](res, error);
-        }
-        return response.error(res, error);
-    } else {
-        return response.created(res, data);
-    }
-}
-
-module.exports = createController([
+module.exports = create([
     checkBody,
     authenticate,
     generateToken,
-    done
 ]);

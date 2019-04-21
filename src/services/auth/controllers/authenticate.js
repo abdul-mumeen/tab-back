@@ -1,9 +1,9 @@
 const jwt = require('jsonwebtoken');
 const check = require('body-checker');
-const {createController, response} = require('../../../utils');
+const {create} = require('../../../utils/controller');
 
 
-const checkBody = (req, res, callback) => {
+const checkBody = ({req}, callback) => {
     const data = {};
     return check(req.body, {
         uuid: {
@@ -12,34 +12,25 @@ const checkBody = (req, res, callback) => {
         }
     }, (err, body) => {
         if (err) {
-          return callback(true);
+          return callback({
+              code: 400,
+              message: err.message
+          });
         }
         data.fields = body;
-        return callback(null, res, data);
+        return callback(null, data);
     });
 }
 
-const generateToken = (res, data, callback) => {
+const generateToken = (data, callback) => {
     const token = jwt.sign({
         uuid: data.fields.uuid
     }, process.env.SECRET);
 
-    return callback(null, res, { token });
+    return callback(null, { token });
 }
 
-const done = (error, res, data) => {
-    if (error) {
-        if (response[error.code]) {
-            return response[error.code](res, error);
-        }
-        return response.error(res, error);
-    } else {
-        return response.created(res, data);
-    }
-}
-
-module.exports = createController([
+module.exports = create([
     checkBody,
     generateToken,
-    done
 ]);

@@ -1,29 +1,22 @@
-// Library Import
 const express = require('express');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const path = require('path');
 
-// Controller Imports
-// const basicController = require('./api/controllers/basic-controller');
-const routes = require('./src/routes');
+const constants = require('./constants');
+const config = require('./src/config');
+const logger = require('./src/utils/logger');
 
-const corsOptions = {
-    origin: '*',
-};
 
-const app = express();
-const router = express.Router();
+function start() {
+    config(express(), express.Router(), (app) => {
+        app.listen(constants.PORT, (err) => {
+            if (err) {
+                process.exit(1);
+            } else {
+                logger.info('Server started', {
+                    PORT: constants.PORT,
+                });
+            }
+        });
+    });
+}
 
-app.use(cors(corsOptions));
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-app.use(express.static(path.resolve(__dirname, './tab-front/dist/ext')));
-// basicController(app);
-routes.routesV1(app, router);
-
-const {PORT=9000} = process.env;
-
-app.listen(PORT, () => {
-    console.log('listening on port 8080');
-});
+start();
