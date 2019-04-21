@@ -1,9 +1,9 @@
 const jwt = require('jsonwebtoken');
 const check = require('body-checker');
-const {createController, response} = require('../../../utils');
+const {create} = require('../../../utils/controller');
 
 
-function checkBody(req, res, firebase, callback) {
+function checkBody({req}, callback) {
     const data = {};
     return check(req.body, {
         email: {
@@ -16,19 +16,22 @@ function checkBody(req, res, firebase, callback) {
         }
     }, (err, body) => {
         if (err) {
-          return callback(true);
+            return callback({
+                code: 400,
+                message: err.message,
+            });
         }
         data.fields = body;
-        return callback(null, res, firebase, data);
+        return callback(null, data);
     });
 }
 
-function authenticate(res, firebase, data, callback) {
-    firebase
+function authenticate(data, callback, {firebase}) {
+    return firebase
         .auth()
         .createUserWithEmailAndPassword(data.fields.email, data.fields.password)
         .then(() => {
-            return callback(null, res, data);
+            return callback(null, data);
         })
         .catch(function(error) {
             if (error) {
@@ -36,7 +39,7 @@ function authenticate(res, firebase, data, callback) {
                 if (code === 'auth/email-already-in-use') {
                     code = 'conflict';
                 }
-                return callback({code, message}, res);
+                return callback({code, message});
             }
         });
 }
@@ -49,20 +52,9 @@ function generateToken(res, data, callback) {
     return callback(null, res, { token });
 }
 
-function done(error, res, data) {
-    if (error) {
-        if (response[error.code]) {
-            return response[error.code](res, error);
-        }
-        return response.error(res, error);
-    } else {
-        return response.created(res, data);
-    }
-}
 
-module.exports = createController([
+module.exports = create([
     checkBody,
     authenticate,
     generateToken,
-    done
 ]);

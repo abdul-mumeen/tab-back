@@ -119,13 +119,14 @@ function create (waterfall) {
                     }
                 );
 
-                if (options.sheetdb) {
-                    logger.info('destroying connection to data source');
-                    options.sheetdb.destroy();
-                }
+                if (process.env.NODE_ENV !=='development') {
+                    if (options.sheetdb) {
+                        logger.info('destroying connection to data source');
+                        options.sheetdb.destroy();
+                    }
+                }   
 
                 if (error) {
-                    console.log(error)
                     if (response[error.code]) {
                         return response[error.code](res, error);
                     }

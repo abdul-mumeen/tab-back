@@ -101,7 +101,6 @@ const response = {
 module.exports = {
     createRoute,
     response,
-    createController,
     knex,
     systemdb,
 };

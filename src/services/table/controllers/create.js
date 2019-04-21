@@ -1,6 +1,5 @@
 const check = require('body-checker');
 const waterfall = require('async/waterfall');
-const {createController, response} = require('../../../utils');
 const {create} = require('../../../utils/controller');
 const logger = require('../../../utils/logger');
 const {getColumnType} = require('../../../utils/table');
@@ -112,16 +111,18 @@ function formatColumn (data, callback) {
 }
 
 function findTable (data, callback, {sheetdb}) {
-    sheetdb.schema.hasTable(data.fields.name)
+    return sheetdb.schema.hasTable(data.fields.name)
         .then((exists) => {
             if (!exists) {
-                return callback(null, data);
+                callback(null, data);
+            } else {
+                callback({
+                    code: 409,
+                    message: 'This table already exists',
+                });
             }
 
-            return callback({
-                code: 409,
-                message: 'This table already exists',
-            });
+            return exists;
         })
         .catch((error) => {
             logger.err(error);
@@ -212,11 +213,12 @@ function createTable (data, callback, {sheetdb}) {
         return sheetdb
             .raw(...Object.values(query))
             .then((...args) => {
-                console.log(...args);
                 callback(null);
+                return args;
             })
             .catch((e) => {
                 callback(e);
+                return e;
             });
     });
 

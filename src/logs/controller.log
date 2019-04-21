@@ -12622,3 +12622,707 @@
     "message": "Server started",
     "timestamp": "21-04-2019 13:28:4444"
 }
+{
+    "PORT": "7000",
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "21-04-2019 13:51:4141"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "21-04-2019 13:52:0101"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 13:52:0101"
+}
+{
+    "method": "POST",
+    "name": "validateTableName",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 13:52:0101"
+}
+{
+    "method": "POST",
+    "name": "validateColumns",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 13:52:0101"
+}
+{
+    "method": "POST",
+    "name": "formatColumn",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 13:52:0101"
+}
+{
+    "method": "POST",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 13:52:0101"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 13:52:0101"
+}
+{
+    "message": "destroying connection to data source",
+    "level": "info",
+    "timestamp": "21-04-2019 13:52:0101"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "21-04-2019 13:52:2020"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 13:52:2020"
+}
+{
+    "method": "POST",
+    "name": "validateTableName",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 13:52:2020"
+}
+{
+    "method": "POST",
+    "name": "validateColumns",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 13:52:2020"
+}
+{
+    "method": "POST",
+    "name": "formatColumn",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 13:52:2020"
+}
+{
+    "method": "POST",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 13:52:2020"
+}
+{
+    "level": "error",
+    "message": "Unable to acquire a connection",
+    "timestamp": "21-04-2019 13:52:2020"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 13:52:2020"
+}
+{
+    "message": "destroying connection to data source",
+    "level": "info",
+    "timestamp": "21-04-2019 13:52:2020"
+}
+{
+    "PORT": "7000",
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "21-04-2019 14:14:5252"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "21-04-2019 14:14:5656"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:14:5656"
+}
+{
+    "method": "POST",
+    "name": "validateTableName",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:14:5656"
+}
+{
+    "method": "POST",
+    "name": "validateColumns",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:14:5656"
+}
+{
+    "method": "POST",
+    "name": "formatColumn",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:14:5656"
+}
+{
+    "method": "POST",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:14:5656"
+}
+{
+    "method": "POST",
+    "name": "generateQuery",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:14:5656"
+}
+{
+    "method": "POST",
+    "name": "createTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 14:14:5656"
+}
+{
+    "sql": "create table `foles` (`id` int unsigned not null auto_increment primary key, `Name` text, `coordinates` float(8, 2), `tessellation_id` bigint, `tessellation_created_by` varchar(255))",
+    "bindings": [],
+    "level": "info",
+    "message": "Running query",
+    "timestamp": "21-04-2019 14:14:5656"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 14:14:5656"
+}
+{
+    "message": "destroying connection to data source",
+    "level": "info",
+    "timestamp": "21-04-2019 14:14:5656"
+}
+{
+    "PORT": "7000",
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "21-04-2019 14:16:3535"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "21-04-2019 14:16:4040"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:16:4040"
+}
+{
+    "method": "POST",
+    "name": "validateTableName",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:16:4040"
+}
+{
+    "method": "POST",
+    "name": "validateColumns",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:16:4040"
+}
+{
+    "method": "POST",
+    "name": "formatColumn",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:16:4040"
+}
+{
+    "method": "POST",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:16:4040"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 14:16:4040"
+}
+{
+    "message": "destroying connection to data source",
+    "level": "info",
+    "timestamp": "21-04-2019 14:16:4040"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "21-04-2019 14:16:4444"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:16:4444"
+}
+{
+    "method": "POST",
+    "name": "validateTableName",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:16:4444"
+}
+{
+    "method": "POST",
+    "name": "validateColumns",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:16:4444"
+}
+{
+    "method": "POST",
+    "name": "formatColumn",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:16:4444"
+}
+{
+    "method": "POST",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:16:4444"
+}
+{
+    "level": "error",
+    "message": "Unable to acquire a connection",
+    "timestamp": "21-04-2019 14:16:4444"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 14:16:4444"
+}
+{
+    "message": "destroying connection to data source",
+    "level": "info",
+    "timestamp": "21-04-2019 14:16:4444"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "21-04-2019 14:17:0202"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:17:0202"
+}
+{
+    "method": "POST",
+    "name": "validateTableName",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:17:0202"
+}
+{
+    "method": "POST",
+    "name": "validateColumns",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:17:0202"
+}
+{
+    "method": "POST",
+    "name": "formatColumn",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:17:0202"
+}
+{
+    "method": "POST",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:17:0202"
+}
+{
+    "level": "error",
+    "message": "Unable to acquire a connection",
+    "timestamp": "21-04-2019 14:17:0202"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 14:17:0202"
+}
+{
+    "message": "destroying connection to data source",
+    "level": "info",
+    "timestamp": "21-04-2019 14:17:0202"
+}
+{
+    "PORT": "7000",
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "21-04-2019 14:17:1010"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "21-04-2019 14:17:1616"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:17:1616"
+}
+{
+    "method": "POST",
+    "name": "validateTableName",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:17:1616"
+}
+{
+    "method": "POST",
+    "name": "validateColumns",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:17:1616"
+}
+{
+    "method": "POST",
+    "name": "formatColumn",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:17:1616"
+}
+{
+    "method": "POST",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:17:1616"
+}
+{
+    "method": "POST",
+    "name": "generateQuery",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:17:1616"
+}
+{
+    "method": "POST",
+    "name": "createTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 14:17:1616"
+}
+{
+    "sql": "create table `fodles` (`id` int unsigned not null auto_increment primary key, `Name` text, `coordinates` float(8, 2), `tessellation_id` bigint, `tessellation_created_by` varchar(255))",
+    "bindings": [],
+    "level": "info",
+    "message": "Running query",
+    "timestamp": "21-04-2019 14:17:1616"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 14:17:1616"
+}
+{
+    "message": "destroying connection to data source",
+    "level": "info",
+    "timestamp": "21-04-2019 14:17:1616"
+}
+{
+    "PORT": "7000",
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "21-04-2019 14:18:3030"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "21-04-2019 14:18:3434"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:18:3434"
+}
+{
+    "method": "POST",
+    "name": "validateTableName",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:18:3434"
+}
+{
+    "method": "POST",
+    "name": "validateColumns",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:18:3434"
+}
+{
+    "method": "POST",
+    "name": "formatColumn",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:18:3434"
+}
+{
+    "method": "POST",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:18:3434"
+}
+{
+    "method": "POST",
+    "name": "generateQuery",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:18:3434"
+}
+{
+    "method": "POST",
+    "name": "createTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 14:18:3434"
+}
+{
+    "sql": "create table `fodeles` (`id` int unsigned not null auto_increment primary key, `Name` text, `coordinates` float(8, 2), `tessellation_id` bigint, `tessellation_created_by` varchar(255))",
+    "bindings": [],
+    "level": "info",
+    "message": "Running query",
+    "timestamp": "21-04-2019 14:18:3434"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 14:18:3434"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "21-04-2019 14:18:5252"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:18:5252"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 14:18:5252"
+}
+{
+    "code": "23505",
+    "level": "error",
+    "message": "insert into \"tessellation_connections\" (\"client\", \"connection\", \"connection_id\", \"created_by\") values ($1, $2, $3, $4) - duplicate key value violates unique constraint \"tessellation_connections_connection_id_unique\"",
+    "timestamp": "21-04-2019 14:18:5353"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 14:18:5353"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "21-04-2019 14:19:0202"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:19:0202"
+}
+{
+    "method": "POST",
+    "name": "createConnection",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 14:19:0202"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/connect",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 14:19:0202"
+}
+{
+    "method": "GET",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [GET]",
+    "timestamp": "21-04-2019 14:19:2121"
+}
+{
+    "method": "GET",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:19:2121"
+}
+{
+    "method": "GET",
+    "name": "formatResult",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:19:2121"
+}
+{
+    "method": "GET",
+    "name": "fetchTableInfo",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 14:19:2121"
+}
+{
+    "method": "GET",
+    "name": "parseTableInformation",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 14:19:2121"
+}
+{
+    "method": "GET",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 14:19:2121"
+}
