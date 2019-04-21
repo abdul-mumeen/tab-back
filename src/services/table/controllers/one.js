@@ -8,19 +8,20 @@ function findTable ({req, sheetdb}, callback) {
     return sheetdb
         .raw(query)
         .then((result) => {
-            console.log(result);
             if (!result[0].length) {
                 return callback({
                     code: 404,
                     message: 'Table does not exist on database'
-                }, res);
+                });
             }
             data.limit = req.query.limit || 10;
             data.offset = +req.query.page * data.limit || 0;
             data.tableName = Object.values(result[0][0])[0];
             data.auth = req.auth;
             data.isAdmin = req.isAdmin;
-            return callback(null, data);
+            callback(null, data);
+
+            return result;
         })
         .catch((error) => {
             logger.err(error);
@@ -38,7 +39,8 @@ function fetchTableInfo (data, callback, {sheetdb}) {
         .then((result) => {
             data.rawInfo = result[0][0];
 
-            return callback(null, data);
+            callback(null, data);
+            return result;
         })
         .catch((error) => {
             logger.err(error);
@@ -68,7 +70,8 @@ function fetchColumnInfo (data, callback, {sheetdb}) {
     
             data.columns = result[0];
     
-            return callback(null, data);
+            callback(null, data);
+            return result;
         })
         .catch((error) => {
             logger.err(error);
@@ -95,11 +98,21 @@ function parseTableColumn (data, callback) {
 }
 
 function fetchTableTows (data, callback, {sheetdb}) {
-    let query = `SELECT * FROM ${data.tableName} WHERE tessellation_created_by='${data.auth.uuid}' LIMIT ${data.offset},${data.limit}`;
+    let query = `SELECT * FROM ${data.tableName}
+        WHERE tessellation_created_by='${data.auth.uuid}'
+            OR  tessellation_created_by='admin'
+        LIMIT ${data.offset},${data.limit}
+    `;
+
+    let query2 = `SELECT COUNT(*) AS total FROM ${data.tableName}
+        WHERE tessellation_created_by='${data.auth.uuid}'
+            OR  tessellation_created_by='admin'`;
+
     if (data.isAdmin) {
         query = `SELECT * FROM ${data.tableName} LIMIT ${data.offset},${data.limit}`;
+        query2 = `SELECT COUNT(*) AS total FROM ${data.tableName}`;
     }
-    let query2 = `SELECT COUNT(*) AS total FROM ${data.tableName}`
+
     return Promise.all([sheetdb.raw(query), sheetdb.raw(query2)])
         .then((results) => {
             data.table.name = data.tableName;
@@ -110,7 +123,8 @@ function fetchTableTows (data, callback, {sheetdb}) {
                 createdAt: data.rawInfo.CREATE_TIME
             };
 
-            return callback(null, { table: data.table });
+            callback(null, { table: data.table });
+            return results;
         })
         .catch((error) => {
             logger.err(error);

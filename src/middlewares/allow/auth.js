@@ -29,7 +29,8 @@ const decodeToken = (req, res, callback) => {
 
 const saveUser = (req, res, user, callback) => {
     req.auth = user;
-    if(util.isRole('admin')) {
+    console.log(util.isRole(req, 'admin'));
+    if(util.isRole(req, 'admin')) {
         req.isAdmin = true;
     } 
     return callback(null);
