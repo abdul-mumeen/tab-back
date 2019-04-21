@@ -20,4 +20,4 @@ out-tsc
 .env
 *.pem
 tab-front/
-
+*.log
