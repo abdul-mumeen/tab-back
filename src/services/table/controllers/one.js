@@ -16,6 +16,7 @@ function findTable ({req, sheetdb}, callback) {
                 }, res);
             }
             data.limit = req.query.limit || 10;
+            data.offset = +req.query.page * data.limit || 0;
             data.tableName = Object.values(result[0][0])[0];
             data.auth = req.auth;
             data.isAdmin = req.isAdmin;
@@ -94,16 +95,16 @@ function parseTableColumn (data, callback) {
 }
 
 function fetchTableTows (data, callback, {sheetdb}) {
-    let query = `SELECT * FROM ${data.tableName} WHERE tessellation_created_by='${data.auth.uuid}' LIMIT ${data.limit}`;
+    let query = `SELECT * FROM ${data.tableName} WHERE tessellation_created_by='${data.auth.uuid}' LIMIT ${data.offset},${data.limit}`;
     if (data.isAdmin) {
-        query = `SELECT * FROM ${data.tableName} LIMIT ${data.limit}`;
+        query = `SELECT * FROM ${data.tableName} LIMIT ${data.offset},${data.limit}`;
     }
-
-    return sheetdb
-        .raw(query)
-        .then((result) => {
+    let query2 = `SELECT COUNT(*) AS total FROM ${data.tableName}`
+    return Promise.all([sheetdb.raw(query), sheetdb.raw(query2)])
+        .then((results) => {
             data.table.name = data.tableName;
-            data.table.rows = result[0];
+            data.table.rows = results[0][0];
+            data.table.total = results[1][0][0].total;
             data.table.metadata = {
                 limit: data.limit,
                 createdAt: data.rawInfo.CREATE_TIME
