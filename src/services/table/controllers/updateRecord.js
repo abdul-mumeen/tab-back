@@ -1,7 +1,6 @@
 const check = require('body-checker');
 const apply = require('async/apply');
 const waterfall = require('async/waterfall');
-const {createController, response} = require('../../../utils');
 const {create} = require('../../../utils/controller');
 const logger = require('../../../utils/logger');
 const {formatKnexError} = require('../../../utils/error');

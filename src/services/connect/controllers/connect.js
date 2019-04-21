@@ -55,6 +55,8 @@ function checkBody ({req, res}, callback) {
 }
 
 function createConnection (data, callback, {systemdb}) {
+
+    // Test connection
     const newKnex = require('knex')({
         client: data.fields.client,
         connection: {
@@ -66,6 +68,7 @@ function createConnection (data, callback, {systemdb}) {
         }
     });
 
+    // Test connection before saving connection details
     return newKnex.raw('select 1+1 as result')
         .then((...args) => {
             // there is a valid connection in the pool

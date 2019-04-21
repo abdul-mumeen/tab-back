@@ -188,7 +188,10 @@ function generateQuery (data, callback, {sheetdb}) {
             if (data.fields.useUUID) {
                 uniqueKeys.push('id');
             }
-            table.unique(uniqueKeys);
+
+            if (uniqueKeys.length) {
+                table.unique(uniqueKeys);
+            }
 
         }).toSQL();
 
@@ -264,5 +267,4 @@ module.exports = create([
     findTable,
     generateQuery,
     createTable,
-    // done
 ]);

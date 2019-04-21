@@ -7,24 +7,23 @@ const constants = require('../../constants');
 const systemdbOptions = require('../../knexfile');
 require('dotenv').config();
 
-const mysqlOpts = {
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME,
-    host: process.env.DB_HOST,
-    port: process.env.DB_PORT,
-};
 
-const db = require('mysql').createConnection(mysqlOpts);
+let knex = {};
 
-db.connect(err => {
-    if (err) console.error(err);
-});
+if (process.env.NODE_ENV === 'development') {
+    const mysqlOpts = {
+        user: process.env.DB_USER,
+        password: process.env.DB_PASSWORD,
+        database: process.env.DB_NAME,
+        host: process.env.DB_HOST,
+        port: process.env.DB_PORT,
+    };
 
-const knex = require('knex')({
-    client: 'mysql',
-    connection: mysqlOpts
-});
+    knex = require('knex')({
+        client: 'mysql',
+        connection: mysqlOpts
+    });
+}
 
 const systemdb = require('knex')(systemdbOptions[process.env.NODE_ENV]);
 
@@ -99,105 +98,10 @@ const response = {
     }
 }
 
-const createController = (waterfall) => {
-    const errorMessage = 'Some error occured and your request cannot be processed at this time';
-    try {
-        const {
-            API_KEY,
-            AUTH_DOMAIN,
-            DATABASE_URL,
-            PROJECT_ID,
-            STORAGE_BUCKET,
-            MESSANGING_SENDER_ID
-        } = process.env;
-    
-        const config = {
-            apiKey: API_KEY,
-            authDomain: AUTH_DOMAIN,
-            databaseURL: DATABASE_URL,
-            projectId: PROJECT_ID,
-            storageBucket: STORAGE_BUCKET,
-            messagingSenderId: MESSANGING_SENDER_ID
-        };
-    
-        if (!firebase.apps.length) {
-            firebase.initializeApp(config);
-        }
-    
-        return (req, res) => {
-            console.log(`START: [${req.method}]`, req.originalUrl);
-            const unfoldWaterfall = waterfall.map((fn, index) => {
-                return (...args) => {
-                    console.log(index !== waterfall.length - 1 
-                        ? `\tRunning block: ${fn.name}`
-                        : `DONE: [${req.method}]  ${req.originalUrl}`, 
-                    );
-
-                    try {
-                        fn(...args, {constants, firebase, db});
-                    } catch (e) {
-                        global.console.error('CODE ERROR', e);
-                        return response.error(res, {
-                            message: errorMessage
-                        });
-                    }
-                }
-            });
-    
-            unfoldWaterfall[0] = async.apply(unfoldWaterfall[0], req, res, {firebase, db });
-    
-            // Do Async Op
-            async.waterfall(
-                unfoldWaterfall.slice(0, -1),
-                unfoldWaterfall.slice(-1)[0]
-            );
-        }
-    } catch (e) {
-        global.console.error('CODE ERROR', e);
-        return response.error(res, {
-            message: errorMessage
-        });
-    }
-}
-
-function listTables() {
-    let query =  '';
-    let bindings = [];
-
-    switch(knex.client.constructor.name) {
-        case 'Client_MSSQL':
-            query = 'SELECT table_name FROM information_schema.tables WHERE table_schema = \'public\' AND table_catalog = ?',
-            bindings = [ knex.client.database() ];
-            break;
-        case 'Client_MySQL':
-        case 'Client_MySQL2':
-            query = 'SELECT table_name FROM information_schema.tables WHERE table_schema = ?';
-            bindings = [ knex.client.database() ];
-            break;
-        case 'Client_Oracle':
-        case 'Client_Oracledb':
-            query = 'SELECT table_name FROM user_tables';
-            break;
-        case 'Client_PG':
-            query =  'SELECT table_name FROM information_schema.tables WHERE table_schema = current_schema() AND table_catalog = ?';
-            bindings = [ knex.client.database() ];
-            break;
-        case 'Client_SQLite3':
-            query = "SELECT name AS table_name FROM sqlite_master WHERE type='table'";
-            break;
-    }
-
-    return knex.raw(query, bindings).then(function(results) {
-        return results.rows.map((row) => row.table_name);
-    });
-}
-
 module.exports = {
     createRoute,
     response,
     createController,
-    listTables,
-    db,
     knex,
     systemdb,
 };

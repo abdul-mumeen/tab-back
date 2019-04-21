@@ -1,7 +1,7 @@
 const async = require('async');
 const firebase = require('firebase');
 const constants = require('../../constants');
-const {db, knex, response, systemdb} = require('./index');
+const {knex, response, systemdb} = require('./index');
 const logger = require('./logger');
 
 
@@ -35,7 +35,7 @@ function create (waterfall) {
     
         // Compose services
         return (req, res) => {
-            const options = {constants, firebase, db, knex, systemdb};
+            const options = {constants, firebase, knex, systemdb};
 
             logger.info(`START: [${req.method}]`, {
                 method: req.method,
@@ -43,7 +43,10 @@ function create (waterfall) {
             });
 
             function initWaterfall (callback) {
-                if (req.sheetConnection) {
+                if (process.env.NODE_ENV === 'development') {
+                    options.sheetdb = knex;
+                    return callback(null, options);
+                } else if (req.sheetConnection) {
                     const sheetdb = require('knex')({
                         client: req.sheetConnection.client,
                         connection: req.sheetConnection.props,

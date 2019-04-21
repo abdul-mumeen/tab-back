@@ -1,4 +1,3 @@
-const {createController, response} = require('../../../utils');
 const {create} = require('../../../utils/controller');
 const logger = require('../../../utils/logger');
 
@@ -50,7 +49,6 @@ function fetchTableInfo (data, callback, {sheetdb}) {
 }
 
 function fetchColumnInfo (data, callback, {sheetdb}) {
-
     const query =`SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME='${data.tableName}'`;
 
     return sheetdb
@@ -128,5 +126,4 @@ module.exports = create([
     fetchColumnInfo,
     parseTableColumn,
     fetchTableTows,
-    // done
 ]);

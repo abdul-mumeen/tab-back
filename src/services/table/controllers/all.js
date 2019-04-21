@@ -1,4 +1,3 @@
-const {response} = require('../../../utils');
 const {create} = require('../../../utils/controller');
 const logger = require('../../../utils/logger');
 
@@ -82,21 +81,9 @@ function parseTableInformation (data, callback, {res}) {
 }
 
 
-function done(error, data, {res}) {
-    if (error) {
-        if (response[error.code]) {
-            return response[error.code](res, error);
-        }
-        return response.error(res, error);
-    } else {
-        return response.ok(res, data);
-    }
-}
-
 module.exports = create([
     findTable,
     formatResult,
     fetchTableInfo,
     parseTableInformation,
-    // done
 ]);

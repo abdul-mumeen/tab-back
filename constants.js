@@ -1,4 +1,4 @@
-
+require('dotenv').config();
 
 module.exports = {
     GENERIC_ERROR: 'Some error occured and your request cannot be processed at this time',

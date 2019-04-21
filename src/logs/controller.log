@@ -12299,3 +12299,326 @@
     "message": "Done!",
     "timestamp": "20-04-2019 18:44:4949"
 }
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "21-04-2019 03:28:0707"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "21-04-2019 03:28:4141"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 03:28:4141"
+}
+{
+    "method": "POST",
+    "name": "validateTableName",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 03:28:4141"
+}
+{
+    "method": "POST",
+    "name": "validateColumns",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 03:28:4141"
+}
+{
+    "method": "POST",
+    "name": "formatColumn",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 03:28:4141"
+}
+{
+    "method": "POST",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 03:28:4141"
+}
+{
+    "method": "POST",
+    "name": "generateQuery",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 03:28:4141"
+}
+{
+    "method": "POST",
+    "name": "createTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 03:28:4141"
+}
+{
+    "sql": "create table `Poles` (`id` int unsigned not null auto_increment primary key, `Name` text, `coordinates` float(8, 2), `tessellation_id` bigint, `tessellation_created_by` varchar(255))",
+    "bindings": [],
+    "level": "info",
+    "message": "Running query",
+    "timestamp": "21-04-2019 03:28:4141"
+}
+{
+    "sql": "alter table `Poles` add unique `poles__unique`()",
+    "bindings": [],
+    "level": "info",
+    "message": "Running query",
+    "timestamp": "21-04-2019 03:28:4141"
+}
+{
+    "sql": "drop table if exists `Poles`",
+    "bindings": [],
+    "level": "info",
+    "message": "Running query",
+    "timestamp": "21-04-2019 03:28:4141"
+}
+{
+    "code": "ER_PARSE_ERROR",
+    "level": "error",
+    "message": "alter table `Poles` add unique `poles__unique`() - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1",
+    "timestamp": "21-04-2019 03:28:4141"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 03:28:4141"
+}
+{
+    "message": "destroying connection to data source",
+    "level": "info",
+    "timestamp": "21-04-2019 03:28:4141"
+}
+{
+    "message": "Dropped table \"Poles\" after unsuccessful creation",
+    "level": "info",
+    "timestamp": "21-04-2019 03:28:4141"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "21-04-2019 03:29:2222"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 03:29:2222"
+}
+{
+    "method": "POST",
+    "name": "validateTableName",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 03:29:2222"
+}
+{
+    "method": "POST",
+    "name": "validateColumns",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 03:29:2222"
+}
+{
+    "method": "POST",
+    "name": "formatColumn",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 03:29:2222"
+}
+{
+    "method": "POST",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 03:29:2222"
+}
+{
+    "method": "POST",
+    "name": "generateQuery",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 03:29:2222"
+}
+{
+    "method": "POST",
+    "name": "createTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 03:29:2222"
+}
+{
+    "sql": "create table `Poles` (`id` int unsigned not null auto_increment primary key, `Name` text, `coordinates` float(8, 2), `tessellation_id` bigint, `tessellation_created_by` varchar(255))",
+    "bindings": [],
+    "level": "info",
+    "message": "Running query",
+    "timestamp": "21-04-2019 03:29:2222"
+}
+{
+    "sql": "alter table `Poles` add unique `poles__unique`()",
+    "bindings": [],
+    "level": "info",
+    "message": "Running query",
+    "timestamp": "21-04-2019 03:29:2222"
+}
+{
+    "sql": "drop table if exists `Poles`",
+    "bindings": [],
+    "level": "info",
+    "message": "Running query",
+    "timestamp": "21-04-2019 03:29:2222"
+}
+{
+    "code": "ER_PARSE_ERROR",
+    "level": "error",
+    "message": "alter table `Poles` add unique `poles__unique`() - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1",
+    "timestamp": "21-04-2019 03:29:2222"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 03:29:2222"
+}
+{
+    "message": "destroying connection to data source",
+    "level": "info",
+    "timestamp": "21-04-2019 03:29:2222"
+}
+{
+    "message": "Dropped table \"Poles\" after unsuccessful creation",
+    "level": "info",
+    "timestamp": "21-04-2019 03:29:2222"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "21-04-2019 03:33:5757"
+}
+{
+    "method": "POST",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "START: [POST]",
+    "timestamp": "21-04-2019 03:34:0303"
+}
+{
+    "method": "POST",
+    "name": "checkBody",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 03:34:0303"
+}
+{
+    "method": "POST",
+    "name": "validateTableName",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 03:34:0303"
+}
+{
+    "method": "POST",
+    "name": "validateColumns",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 03:34:0303"
+}
+{
+    "method": "POST",
+    "name": "formatColumn",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 03:34:0303"
+}
+{
+    "method": "POST",
+    "name": "findTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 03:34:0303"
+}
+{
+    "method": "POST",
+    "name": "generateQuery",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Running...",
+    "timestamp": "21-04-2019 03:34:0303"
+}
+{
+    "method": "POST",
+    "name": "createTable",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 03:34:0303"
+}
+{
+    "sql": "create table `Poles` (`id` int unsigned not null auto_increment primary key, `Name` text, `coordinates` float(8, 2), `tessellation_id` bigint, `tessellation_created_by` varchar(255))",
+    "bindings": [],
+    "level": "info",
+    "message": "Running query",
+    "timestamp": "21-04-2019 03:34:0303"
+}
+{
+    "method": "POST",
+    "name": "done",
+    "url": "/api/v1/table",
+    "level": "info",
+    "message": "Done!",
+    "timestamp": "21-04-2019 03:34:0303"
+}
+{
+    "message": "destroying connection to data source",
+    "level": "info",
+    "timestamp": "21-04-2019 03:34:0303"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "21-04-2019 12:55:5858"
+}
+{
+    "PORT": 9000,
+    "level": "info",
+    "message": "Server started",
+    "timestamp": "21-04-2019 13:28:4444"
+}

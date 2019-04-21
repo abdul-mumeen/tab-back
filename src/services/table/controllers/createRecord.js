@@ -1,7 +1,6 @@
 const check = require('body-checker');
 const waterfall = require('async/waterfall');
 const apply = require('async/apply');
-const {createController, response} = require('../../../utils');
 const {create} = require('../../../utils/controller');
 const logger = require('../../../utils/logger');
 const {formatKnexError} = require('../../../utils/error');
@@ -35,7 +34,7 @@ function checkBody ({req}, callback) {
 }
 
 function findTable (data, callback, {sheetdb}) {
-    sheetdb.schema.hasTable(data.tableName)
+    return sheetdb.schema.hasTable(data.tableName)
         .then((exists) => {
             if (!exists) {
                 return ({
@@ -62,6 +61,13 @@ function getColumnInfo (data, callback, {sheetdb}) {
         .then((info) => {
             data.columns = info;
             return callback(null, data); 
+        })
+        .catch((error) => {
+            logger.err(error);
+            return callback({
+                code: 501,
+                message: 'Cannot get table at this time'
+            });
         });
 }
 
@@ -135,7 +141,5 @@ module.exports = create([
     checkBody,
     findTable,
     getColumnInfo,
-    // validateFields,
     createRecords,
-    // done
 ]);
