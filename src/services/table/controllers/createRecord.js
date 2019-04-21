@@ -128,6 +128,7 @@ function createRecords(data, callback, {sheetdb}) {
                                         .then(() => {
                                             result.push({...values, ...tessellationData});
                                             callback2(null, result)
+                                            return result;
                                         })
                                         .catch((error) => {
                                             logger.err(error);
