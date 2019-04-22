@@ -18,8 +18,8 @@ module.exports = (app, router, callback) => {
     app.use(bodyParser.json());
 
     // Serve frontend
-    if (process.env.NODE_ENV === constants.PRODUCTION) {
-        app.use(express.static(path.resolve(__dirname, './tab-front/dist/ext')));
+    if (process.env.NODE_ENV.toUpperCase() === constants.PRODUCTION) {
+        app.use(express.static(path.resolve(__dirname, '../tab-front/dist/ext')));
     }
 
     // Routes config

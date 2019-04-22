@@ -21,7 +21,7 @@ const routesV1 = (app, router) => {
     });
     app.use(BASE, router);
 
-    if (process.env.NODE_ENV === constants.PRODUCTION) {
+    if (process.env.NODE_ENV.toUpperCase() === constants.PRODUCTION) {
         app.use('*', (req, res) => {
             return res.sendFile(path.resolve(__dirname, '../../tab-front/dist/ext/index.html'));
         });
