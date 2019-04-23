@@ -36,20 +36,20 @@ function checkBody ({req, res}, callback) {
           return callback({
                 code: 400,
                 message: err.message,
-            }, res);
+            });
         }
 
-        if (!req.headers.connection_id) {
+        if (!req.headers['connection-id']) {
             return callback({
                 code: 400,
                 message: 'connection id is required',
-            }, res);
+            });
         }
 
         data.fields = body;
         data.auth = req.auth;
         data.isAdmin = req.isAdmin;
-        data.connectionId = req.headers.connection_id;
+        data.connectionId = req.headers['connection-id'];
         return callback(null, data);
     });
 }

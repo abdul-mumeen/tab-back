@@ -26,7 +26,7 @@ const check = (req, res, callback) => {
     if (process.env.NODE_ENV === 'development') {
         return callback(null, req, res);
     }
-    if (!util.isRole(req, 'connection_id')) return callback(new Error())
+    if (!util.isRole(req, 'connection-id')) return callback(new Error())
     return callback(null, req, res);
 }
 
@@ -38,11 +38,11 @@ const getConnection = (req, res, callback) => {
     return systemdb('tessellation_connections')
         .select(['connection', 'client'])
         .where({
-            connection_id: req.headers.connection_id,
+            connection_id: req.headers['connection-id'],
         })
         .then((result) => {
             if (!result.length) {
-                throw new Error(`No connection found for id ${req.headers.connection_id}`);
+                throw new Error(`No connection found for id ${req.headers['connection-id']}`);
             }
             req.sheetConnection = {
                 props: result[0].connection,
