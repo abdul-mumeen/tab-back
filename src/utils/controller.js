@@ -40,7 +40,7 @@ function create (waterfall) {
             logger.info(`START: [${req.method}]`, {
                 method: req.method,
                 url: req.originalUrl,
-                headers: req.header,
+                headers: req.headers,
                 body: req.body,
                 queries: req.query,
             });
