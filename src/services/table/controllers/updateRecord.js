@@ -76,8 +76,14 @@ function findTable (data, callback, {sheetdb}) {
 function updateRecords(data, callback, {sheetdb}) {
     const ops = data.rows.map((row) => (result, callback2) => {
         const {tessellation_id, ...rest} = row;
+
+        const where = {tessellation_id}
+        if (!data.isAdmin) {
+            where.tessellation_created_by = data.auth.uuid;
+        }
+    
         return sheetdb(data.tableName)
-            .where({tessellation_id, tessellation_created_by: data.isAdmin ? undefined : data.auth.uuid})
+            .where(where)
             .update(rest)
             .then(() => {
                 // TODO: Cache this
