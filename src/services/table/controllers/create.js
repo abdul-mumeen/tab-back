@@ -69,6 +69,11 @@ function validateTableName (data, callback) {
             code: 400,
             message: 'Invalid table name'
         });
+    } else if (!data.fields.name.match(/^[a-zA-Z0-9\-_]+$/)) {
+        return callback({
+            code: 400,
+            message: 'Invalid table name'
+        });
     }
     return callback(null, data);
 }

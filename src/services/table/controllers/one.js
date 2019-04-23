@@ -98,19 +98,19 @@ function parseTableColumn (data, callback) {
 }
 
 function fetchTableTows (data, callback, {sheetdb}) {
-    let query = `SELECT * FROM ${data.tableName}
+    let query = `SELECT * FROM \`${data.tableName}\`
         WHERE tessellation_created_by='${data.auth.uuid}'
             OR  tessellation_created_by='admin'
         LIMIT ${data.offset},${data.limit}
     `;
 
-    let query2 = `SELECT COUNT(*) AS total FROM ${data.tableName}
+    let query2 = `SELECT COUNT(*) AS total FROM \`${data.tableName}\`
         WHERE tessellation_created_by='${data.auth.uuid}'
             OR  tessellation_created_by='admin'`;
 
     if (data.isAdmin) {
-        query = `SELECT * FROM ${data.tableName} LIMIT ${data.offset},${data.limit}`;
-        query2 = `SELECT COUNT(*) AS total FROM ${data.tableName}`;
+        query = `SELECT * FROM \`${data.tableName}\` LIMIT ${data.offset},${data.limit}`;
+        query2 = `SELECT COUNT(*) AS total FROM \`${data.tableName}\``;
     }
 
     return Promise.all([sheetdb.raw(query), sheetdb.raw(query2)])
