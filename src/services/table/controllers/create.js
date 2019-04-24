@@ -69,7 +69,11 @@ function validateTableName (data, callback) {
             code: 400,
             message: 'Invalid table name'
         });
-    } else if (!data.fields.name.match(/^[a-zA-Z0-9\-_]+$/)) {
+    }
+
+    data.fields.name = data.fields.name.replace(/\s/g, '_');
+
+    if (!data.fields.name.match(/^[a-zA-Z0-9\-_]+$/)) {
         return callback({
             code: 400,
             message: 'Invalid table name'
@@ -79,7 +83,16 @@ function validateTableName (data, callback) {
 }
 
 function validateColumns (data, callback) {
-    for (const column of data.fields.columns) {
+    for (const [index, column] of data.fields.columns.entries()) {
+        data.fields.columns[index].name = data.fields.columns[index].name.replace(/\s/g, '_');
+
+        if (!column.name.match(/^[a-zA-Z0-9\-_]+$/)) {
+            return callback({
+                code: 400,
+                message: `"${column.name}" is not a valid column name`,
+            });
+        }
+    
         if (!column.name) {
             return callback({
                 code: 400,
