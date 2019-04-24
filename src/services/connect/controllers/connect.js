@@ -73,23 +73,70 @@ function createConnection (data, callback, {systemdb}) {
         .then((...args) => {
             // there is a valid connection in the pool
             return systemdb('tessellation_connections')
-                .insert({
-                    connection: {
-                        host: data.fields.host,
-                        password: data.fields.password,
-                        user: data.fields.user,
-                        database: data.fields.database,
-                        port: data.fields.port,
-                    },
-                    connection_id: data.connectionId,
-                    created_by: data.auth.uuid,
-                    client: data.fields.client,
-                })
-                .then(() => {
-                    return callback(null, {
-                        database: data.fields.database,
-                        connection_id: data.connectionId,
-                    }); 
+                .select('*')
+                .where({connection_id: data.connectionId})
+                .then((result) => {
+                    if (result.length) {
+                        return systemdb('tessellation_connections')
+                            .where({id: result[0].id})
+                            .update({
+                                connection: {
+                                    host: data.fields.host,
+                                    password: data.fields.password,
+                                    user: data.fields.user,
+                                    database: data.fields.database,
+                                    port: data.fields.port,
+                                },
+                                created_by: data.auth.uuid,
+                                client: data.fields.client,
+                            })
+                            .then(() => {
+                                return callback(null, {
+                                    database: data.fields.database,
+                                    connection_id: data.connectionId,
+                                });
+                            })
+                            .catch((error) => {
+                                logger.err(error);
+                                return callback({
+                                    code: 500,
+                                    message: formatKnexError(
+                                        error,
+                                        'Could not establish a connection with this database. Please ensure the credentials are accurate',
+                                    ),
+                                });
+                            });
+                    }
+
+                    return systemdb('tessellation_connections')
+                        .insert({
+                            connection: {
+                                host: data.fields.host,
+                                password: data.fields.password,
+                                user: data.fields.user,
+                                database: data.fields.database,
+                                port: data.fields.port,
+                            },
+                            connection_id: data.connectionId,
+                            created_by: data.auth.uuid,
+                            client: data.fields.client,
+                        })
+                        .then(() => {
+                            return callback(null, {
+                                database: data.fields.database,
+                                connection_id: data.connectionId,
+                            }); 
+                        })
+                        .catch((error) => {
+                            logger.err(error);
+                            return callback({
+                                code: 500,
+                                message: formatKnexError(
+                                    error,
+                                    'Could not establish a connection with this database. Please ensure the credentials are accurate',
+                                ),
+                            });
+                        });
                 })
                 .catch((error) => {
                     logger.err(error);
